@@ -19,4 +19,5 @@
   ga('create', 'UA-47035308-1', 'deemoney.github.io');
   ga('send', 'pageview');
 
+  alert("Google Analytics Enabled!");
 </script>
