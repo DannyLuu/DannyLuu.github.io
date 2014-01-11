@@ -135,44 +135,16 @@ a.button {
 }
 
 a.youtube {
-	width: 134px;
-	height: 58px;
-	line-height: 1.2;
-	font-size: 23px;
-	color: #cd201f;
-	padding-left: 68px;
-	padding-top: 22px;
-	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial,
-		serif;
+	color: #bb0000
 }
 
-a.youtubered {
-	width: 134px;
-	height: 58px;
-	line-height: 1.2;
-	font-size: 23px;
-	color: #cd201f;
-	padding-left: 68px;
-	padding-top: 22px;
-	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial,
-		serif;
-}
-
-a.youtubeblack {
-	width: 134px;
-	height: 58px;
-	line-height: 1.2;
-	font-size: 23px;
-	color: #000000;
-	padding-left: 68px;
-	padding-top: 22px;
-	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial,
-		serif;
+a.linkedin {
+	color: #007bb6;
 }
 
 a.button small {
 	display: block;
-	font-size: 11px;
+	font-size: 14px;
 }
 
 header a.button {
@@ -193,6 +165,10 @@ aside a.button {
 
 aside a.youtube {
 	background: transparent url(../images/youtube-button.png) 0 0 no-repeat;
+}
+
+aside a.linkedin {
+	background: transparent url(../images/linkedin-button.png) 0 0 no-repeat;
 }
 
 code,pre {
