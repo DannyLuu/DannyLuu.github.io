@@ -1,2 +1,3 @@
-
-    $("#menu").load("../menu.html");
+$(function(){
+    $("#menu").load("menu.html");
+});
