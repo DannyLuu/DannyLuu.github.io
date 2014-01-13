@@ -20,24 +20,13 @@
     <![endif]-->
 
 <!-- Google Analytics -->
-<script src="/javascripts/googleAnalytics.js" type="text/javascript">
+<script src="javascripts/googleAnalytics.js" type="text/javascript">
 	</
 </script>
-<script src="/javascripts/googleAnalyticsTracker.js"
+<script src="javascripts/googleAnalyticsTracker.js"
 	type="text/javascript"></script>
-
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").load("menu.html",function(responseTxt,statusTxt,xhr){
-      if(statusTxt=="success")
-        alert("External content loaded successfully!");
-      if(statusTxt=="error")
-        alert("Error: "+xhr.status+": "+xhr.statusText);
-    });
-  });
-});
-</script>
+<script src="javascripts/menubar.js"
+	type="text/javascript"></script>
 
 <title>Danny Luu</title>
 </head>
@@ -60,9 +49,6 @@ $(document).ready(function(){
 				frameborder=0 scrolling=auto></IFRAME>
 			<section id="main-content">
 			-->
-			<script>
-				$("#menu").load("menu.html");
-			</script>
 			<div class="menu"></div>
 				<h3>
 					<a name="welcome-to-github-pages" class="anchor"
@@ -80,9 +66,7 @@ $ git fetch origin
 $ git checkout gh-pages
 					</code>
 				</pre>
-				
-				<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
-<button>Get External Content</button>
+
 				<!-- 
 				<h3>
 					<a name="authors-and-contributors" class="anchor"
