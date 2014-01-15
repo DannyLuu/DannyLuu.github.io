@@ -135,8 +135,8 @@ header h2 {
 
 
 #menu li a:hover {
-		color: #c00;
-		background-color: #fff;
+		//color: #c00;
+		//background-color: #fff;
 }
 
 #coolMenu ul li:hover a {
