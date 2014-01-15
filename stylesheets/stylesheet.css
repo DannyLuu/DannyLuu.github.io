@@ -120,7 +120,7 @@ header h2 {
 #menu > li > a{
 	float: left;
 	width: auto;
-	color: #fff;
+	//color: #fff;
 	font-weight: bold;
 }
 
@@ -134,7 +134,7 @@ header h2 {
 }
 
 #menu ul li a {
-	color: #000;
+	//color: #000;
 }
 
 #menu li a:hover {
