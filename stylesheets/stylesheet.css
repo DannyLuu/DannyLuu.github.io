@@ -109,7 +109,7 @@ header h2 {
 #menu ul {
 	list-style: none;
 	display: table-row;
-	background: #f09d28;
+	//background: #f09d28;
 }
 
 #menu li {
@@ -133,9 +133,6 @@ header h2 {
 		border-right: 1px solid #ccc;
 }
 
-#menu ul li a {
-	//color: #000;
-}
 
 #menu li a:hover {
 		color: #c00;
@@ -143,7 +140,7 @@ header h2 {
 }
 
 #coolMenu ul li:hover a {
-    background: #ffc97c;
+   // background: #ffc97c;
 }
 
 #main-content {
