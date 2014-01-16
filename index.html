@@ -26,6 +26,15 @@
 	type="text/javascript"></script>
 <script src="javascripts/menubar.js" type="text/javascript"></script>
 <title>Danny Luu</title>
+<script>
+	$(function() {
+		$('#menu').find('> li').hover(
+				function() {
+					$(this).find('ul').removeClass('noJS').stop(true, true)
+							.slideToggle('fast');
+				});
+	});
+</script>
 </head>
 
 <body>
