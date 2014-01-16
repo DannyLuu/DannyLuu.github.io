@@ -137,6 +137,7 @@ header h2 {
 }
 
 #menu li a {
+		list-style: none;
 		display: block;
 		padding: 8px 15px;
 		text-decoration: none;
@@ -152,7 +153,7 @@ header h2 {
 }
 
 #coolMenu ul li:hover a {
-   // background: #ffc97c;
+    background: #ffc97c;
 }
 
 #main-content {
