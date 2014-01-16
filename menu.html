@@ -6,8 +6,17 @@
 -->
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css"
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css"
 	media="screen" />
+<script>
+	$(function() {
+		$('#menu').find('> li').hover(
+				function() {
+					$(this).find('ul').removeClass('noJS').stop(true, true)
+							.slideToggle('fast');
+				});
+	});
+</script>
 </head>
 
 <body>
