@@ -56,8 +56,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: none;
-  height: auto;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 /* CUSTOMIZE THE IMAGES for the carousel
@@ -68,9 +68,7 @@ body {
     .slider-size {
         height: auto;
     }
-    .slider-size > img {
-         width: 80%;
-    }
+
 }
 
 /* tablets */
@@ -78,9 +76,7 @@ body {
     .slider-size {
         height: auto;
     }
-    .slider-size > img {
-        width: 80%;
-    }
+
 }
 
 /* laptops */
@@ -88,18 +84,13 @@ body {
     .slider-size {
          height: 200px;
     }
-    .slider-size > img {
-        width: 80%;
-    }
+
 }
 
 /* desktops */
 @media (min-width: 1024px) {
     .slider-size {
         height: 500px;
-    }
-    .slider-size > img {
-        width: 60%;
     }
 }
 
