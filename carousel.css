@@ -56,10 +56,52 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
+  min-width: none;
   height: 500px;
 }
 
+/* CUSTOMIZE THE IMAGES for the carousel
+-------------------------------------------------- */
+
+/* Mobile */
+@media (max-width: 767px) {
+    .slider-size {
+        height: auto;
+    }
+    .slider-size > img {
+         width: 80%;
+    }
+}
+
+/* tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    .slider-size {
+        height: auto;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+}
+
+/* laptops */
+@media (max-width: 1023px) and (min-width: 992px) {
+    .slider-size {
+         height: 200px;
+    }
+    .slider-size > img {
+        width: 80%;
+    }
+}
+
+/* desktops */
+@media (min-width: 1024px) {
+    .slider-size {
+        height: 500px;
+    }
+    .slider-size > img {
+        width: 60%;
+    }
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
