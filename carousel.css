@@ -58,40 +58,7 @@ body {
   left: 0;
   min-width: 100%;
   min-height: 100%;
-}
-
-/* CUSTOMIZE THE IMAGES for the carousel
--------------------------------------------------- */
-
-/* Mobile */
-@media (max-width: 767px) {
-    .slider-size {
-        height: auto;
-    }
-
-}
-
-/* tablets */
-@media (max-width: 991px) and (min-width: 768px) {
-    .slider-size {
-        height: auto;
-    }
-
-}
-
-/* laptops */
-@media (max-width: 1023px) and (min-width: 992px) {
-    .slider-size {
-         height: 200px;
-    }
-
-}
-
-/* desktops */
-@media (min-width: 1024px) {
-    .slider-size {
-        height: 500px;
-    }
+  height: auto;
 }
 
 /* MARKETING CONTENT
