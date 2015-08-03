@@ -57,7 +57,7 @@ body {
   top: 0;
   left: 0;
   min-width: none;
-  height: 500px;
+  height: auto;
 }
 
 /* CUSTOMIZE THE IMAGES for the carousel
