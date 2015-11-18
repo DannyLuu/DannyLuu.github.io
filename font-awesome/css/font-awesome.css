@@ -183,6 +183,14 @@
   text-align: center;
   line-height: inherit;
 }
+.fa-orchid {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 82px;
+  background: url(orchid_01.svg);
+  background-size: 100px 82px;
+}
 .fa-inverse {
   color: #ffffff;
 }
