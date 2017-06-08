@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="" />
+    <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_3860.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_3866.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_3932.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_3956.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4503.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4513.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4563_v1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4720_v2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4863_v1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4916_v2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4920_v2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG_4922_v2.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wedding.html" afterPath="$PROJECT_DIR$/wedding.html" />
+    </list>
     <ignored path="dannyluu.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -34,8 +49,8 @@
       <file leaf-file-name="wedding.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wedding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+            <state relative-caret-position="495">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -650,12 +665,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496873065818</updated>
-      <workItem from="1496873067138" duration="11421000" />
+      <workItem from="1496873067138" duration="11661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11421000" />
+    <option name="totallyTimeSpent" value="11661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-157" width="1920" height="1053" extended-state="6" />
@@ -770,8 +785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wedding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="38" selection-start-line="92" selection-start-column="38" selection-end-line="92" selection-end-column="38" />
+        <state relative-caret-position="495">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
