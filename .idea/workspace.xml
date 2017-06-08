@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/banner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/pic01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/pic02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/pic03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/spotlight01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/spotlight02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/spotlight03.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wedding.html" afterPath="$PROJECT_DIR$/wedding.html" />
     </list>
     <ignored path="dannyluu.iws" />
@@ -36,8 +43,8 @@
       <file leaf-file-name="wedding.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wedding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="183" column="95" selection-start-line="183" selection-start-column="95" selection-end-line="183" selection-end-column="95" />
+            <state relative-caret-position="825">
+              <caret line="175" column="38" selection-start-line="175" selection-start-column="38" selection-end-line="175" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -660,12 +667,12 @@
       <updated>1496873065818</updated>
       <workItem from="1496873067138" duration="14342000" />
       <workItem from="1496893769144" duration="22000" />
-      <workItem from="1496893954343" duration="4442000" />
+      <workItem from="1496893954343" duration="5174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18806000" />
+    <option name="totallyTimeSpent" value="19538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -822,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wedding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="183" column="95" selection-start-line="183" selection-start-column="95" selection-end-line="183" selection-end-column="95" />
+        <state relative-caret-position="825">
+          <caret line="175" column="38" selection-start-line="175" selection-start-column="38" selection-end-line="175" selection-end-column="38" />
           <folding />
         </state>
       </provider>
