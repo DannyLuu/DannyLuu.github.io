@@ -18,6 +18,16 @@
 		vertical-align: baseline;
 	}
 
+		div .field.half {
+			width: 50%;
+			float: left;
+			padding: 0 0 0 0.75rem;
+		}
+
+			div .field.half.first {
+				padding: 0 0.75rem 0 0;
+			}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
