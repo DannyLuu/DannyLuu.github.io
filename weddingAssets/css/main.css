@@ -2394,6 +2394,10 @@
 		text-align: center;
 	}
 
+	.icon-left {
+		position: inherit;
+	}
+
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -2694,6 +2698,10 @@
 
 	section.special, article.special {
 		text-align: center;
+	}
+	
+	section span .specialleft {
+		position: absolute;
 	}
 
 	header p {
