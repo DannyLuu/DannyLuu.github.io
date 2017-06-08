@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wedding.html" afterPath="$PROJECT_DIR$/wedding.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weddingImages/dannyAndJudyBanner.jpg" afterPath="$PROJECT_DIR$/weddingImages/dannyAndJudyBanner.jpg" />
     </list>
     <ignored path="dannyluu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weddingAssets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="2398" column="5" selection-start-line="2398" selection-start-column="5" selection-end-line="2398" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="2454" column="10" selection-start-line="2454" selection-start-column="5" selection-end-line="2454" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -652,12 +652,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496873065818</updated>
-      <workItem from="1496873067138" duration="11859000" />
+      <workItem from="1496873067138" duration="12154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11859000" />
+    <option name="totallyTimeSpent" value="12154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-157" width="1920" height="1053" extended-state="6" />
@@ -757,17 +757,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weddingAssets/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1575">
-          <caret line="2398" column="5" selection-start-line="2398" selection-start-column="5" selection-end-line="2398" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/IMG_3860.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingAssets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="2454" column="10" selection-start-line="2454" selection-start-column="5" selection-end-line="2454" selection-end-column="10" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wedding.html">
