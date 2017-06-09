@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="" />
+    <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3860.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3866.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3932.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3956.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_4513.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_4720_v2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/12.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wedding.html" afterPath="$PROJECT_DIR$/wedding.html" />
+    </list>
     <ignored path="dannyluu.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -34,8 +67,8 @@
       <file leaf-file-name="wedding.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wedding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="163" column="58" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
+            <state relative-caret-position="210">
+              <caret line="35" column="98" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -79,9 +112,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="1644" />
+    <option name="y" value="-111" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -108,7 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -151,60 +185,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="weddingImages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thumbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dannyluu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dannyluu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weddingImages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gallery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fulls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dannyluu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dannyluu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="weddingAssets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dannyluu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dannyluu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dannyluu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dannyluu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dannyluu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dannyluu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -658,16 +690,17 @@
       <updated>1496873065818</updated>
       <workItem from="1496873067138" duration="14342000" />
       <workItem from="1496893769144" duration="22000" />
-      <workItem from="1496893954343" duration="7238000" />
+      <workItem from="1496893954343" duration="7469000" />
+      <workItem from="1496969745835" duration="559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21602000" />
+    <option name="totallyTimeSpent" value="22392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="825" extended-state="6" />
-    <editor active="true" />
+    <frame x="1644" y="-111" width="1440" height="873" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -677,7 +710,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10658083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49928468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -709,6 +742,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="74" column="100" selection-start-line="74" selection-start-column="96" selection-end-line="74" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wedding.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingAssets/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36810">
+          <caret line="2454" column="10" selection-start-line="2454" selection-start-column="5" selection-end-line="2454" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
@@ -796,11 +853,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weddingImages/banner.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weddingImages/banner.jpg" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1110">
@@ -820,8 +873,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wedding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="163" column="58" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
+        <state relative-caret-position="210">
+          <caret line="35" column="98" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
           <folding />
         </state>
       </provider>
