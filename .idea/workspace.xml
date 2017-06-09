@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1afa5d5b-453f-4468-9172-2b336e3b95b9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3860.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3866.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3932.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_3956.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_4513.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/IMG_4720_v2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/fulls/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/07.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/08.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/09.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/weddingImages/gallery/thumbs/12.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/weddingImages/weddingBanquetSpotlight.jpg" afterPath="$PROJECT_DIR$/weddingImages/banquetSpotlight.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wedding.html" afterPath="$PROJECT_DIR$/wedding.html" />
     </list>
     <ignored path="dannyluu.iws" />
@@ -67,8 +37,8 @@
       <file leaf-file-name="wedding.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wedding.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="35" column="98" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
+            <state relative-caret-position="165">
+              <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -691,16 +661,16 @@
       <workItem from="1496873067138" duration="14342000" />
       <workItem from="1496893769144" duration="22000" />
       <workItem from="1496893954343" duration="7469000" />
-      <workItem from="1496969745835" duration="559000" />
+      <workItem from="1496969745835" duration="684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22392000" />
+    <option name="totallyTimeSpent" value="22517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1644" y="-111" width="1440" height="873" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -710,7 +680,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49928468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28040057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -871,10 +841,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/weddingImages/banquetSpotlight.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wedding.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="35" column="98" selection-start-line="35" selection-start-column="98" selection-end-line="35" selection-end-column="98" />
+        <state relative-caret-position="165">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
           <folding />
         </state>
       </provider>
