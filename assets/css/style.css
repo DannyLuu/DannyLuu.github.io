@@ -308,6 +308,7 @@ figure {
           line-height: 1.5;
           margin-bottom: 30px;
           font-weight: 300;
+          text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Add a soft white outline */
           font-family: "Quicksand", Arial, sans-serif; }
           #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 a {
             color: rgba(44, 152, 240, 0.8);
