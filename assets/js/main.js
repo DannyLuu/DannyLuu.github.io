@@ -2,6 +2,50 @@
 	
 	'use strict';
 
+    document.addEventListener('DOMContentLoaded', function() {
+        // Function to handle hover event for each service
+        var handleHover = function(serviceId) {
+            var serviceElement = document.getElementById(serviceId);
+            var videoContainer = serviceElement.querySelector('.video-container');
+            var video = videoContainer.querySelector('video');
+
+            // Event listener for mouse enter
+            serviceElement.addEventListener('mouseenter', function() {
+                // Show the video container
+                videoContainer.style.display = 'block';
+                // Play the video
+                video.play();
+                video.style.opacity = '0.60';
+            });
+
+            // Event listener for mouse leave
+            serviceElement.addEventListener('mouseleave', function() {
+                // Pause the video
+                video.pause();
+                // Hide the video container
+                videoContainer.style.display = 'none';
+            });
+
+            // Event listener for mouse enter on video
+            video.addEventListener('mouseenter', function() {
+                // Remove video controls
+                video.removeAttribute('controls');
+            });
+
+            // Event listener for mouse leave on video
+            video.addEventListener('mouseleave', function() {
+                // Add video controls
+                video.removeAttribute('controls');
+            });
+        };
+
+        // Call handleHover function for each service
+        handleHover('service-1');
+        handleHover('service-2');
+        handleHover('service-3');
+        handleHover('service-4');
+    });
+
 
 
 	var isMobile = {
