@@ -25,18 +25,6 @@
                 // Hide the video container
                 videoContainer.style.display = 'none';
             });
-
-            // Event listener for mouse enter on video
-            video.addEventListener('mouseenter', function() {
-                // Remove video controls
-                video.removeAttribute('controls');
-            });
-
-            // Event listener for mouse leave on video
-            video.addEventListener('mouseleave', function() {
-                // Add video controls
-                video.removeAttribute('controls');
-            });
         };
 
         // Call handleHover function for each service
