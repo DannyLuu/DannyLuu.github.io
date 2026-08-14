@@ -1,839 +1,685 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Danny Luu - v2</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danny Luu is a technical architect, engineering lead, and hands-on builder focused on dependable commerce platforms, thoughtful products, and stronger teams.">
+  <meta name="author" content="Danny Luu">
+  <meta name="theme-color" content="#16152f">
+  <script>document.documentElement.classList.add('js')</script>
 
-	<!-- TODO: Confirm if this is still needed -->
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Danny Luu's Site"/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content="https://www.dannyluu.com"/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Danny Luu — Architect. Builder. Coach.">
+  <meta property="og:description" content="Technical architecture, software engineering, product experiments, and creative work by Danny Luu.">
+  <meta property="og:url" content="https://www.dannyluu.com/">
+  <meta property="og:image" content="https://www.dannyluu.com/assets/images/headshot.png">
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="assets/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-	<link rel="manifest" href="assets/favicon/site.webmanifest">
+  <title>Danny Luu — Architect. Builder. Coach.</title>
+  <link rel="canonical" href="https://www.dannyluu.com/">
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="assets/css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="assets/css/flexslider.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    :root {
+      --ink: #16152f;
+      --ink-soft: #35334d;
+      --paper: #f7f3ea;
+      --paper-2: #fffdf8;
+      --violet: #635bff;
+      --violet-dark: #3b35bb;
+      --coral: #ff6b55;
+      --lime: #c9ff55;
+      --sky: #bcecff;
+      --line: rgba(22, 21, 47, .16);
+      --shadow: 0 1.6rem 4rem rgba(38, 31, 77, .14);
+      --radius: 1.5rem;
+      --content: 75rem;
+      color-scheme: light;
+    }
 
-	<!-- Modernizr JS -->
-	<script src="assets/js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="assets/js/respond.min.js"></script>
-	<![endif]-->
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Avenir Next", Avenir, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    :focus-visible { outline: .2rem solid var(--coral); outline-offset: .25rem; }
+    ::selection { background: var(--lime); color: var(--ink); }
 
-	</head>
-	<body>
-	<div id="colorlib-page">
-		<div class="container-wrap">
-		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
-		<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
-			<div class="text-center">
-				<div class="author-img" style="background-image: url(assets/images/headshot.png);"></div>
-				<h1 id="colorlib-logo"><a href="index.html">Danny Luu</a></h1>
-				<span class="position"><a href="#">Software Engineer</a> in Ottawa</span>
-			</div>
-			<nav id="colorlib-main-menu" role="navigation" class="navbar">
-				<div id="navbar" class="collapse">
-					<ul>
-						<li class="active"><a href="#" data-nav-section="home">Home</a></li>
-						<li><a href="#" data-nav-section="about">About</a></li>
-						<li><a href="#" data-nav-section="services">Services</a></li>
-						<li><a href="#" data-nav-section="skills">Skills</a></li>
-						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="experience">Experience</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
-						<li><a href="#" data-nav-section="blog">Blog</a></li>
-						<li><a href="#" data-nav-section="contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
+    .skip-link {
+      position: fixed;
+      z-index: 100;
+      top: 1rem;
+      left: 1rem;
+      padding: .65rem 1rem;
+      transform: translateY(-200%);
+      border-radius: .75rem;
+      background: var(--ink);
+      color: white;
+      font-weight: 800;
+    }
+    .skip-link:focus { transform: translateY(0); }
 
-			<div class="colorlib-footer">
-				<p><small>&copy;Copyright <script>document.write(new Date().getFullYear());</script><b> | Danny Luu</b></small></p>
-				<ul>
-					<li><a href="https://www.youtube.com/c/DannyLuu?sub_confirmation=1" target="_blank" rel="noreferrer noopener"><i class="icon-youtube"></i></a></li>
-					<li><a href="https://www.instagram.com/notdannyluu" target="_blank" rel="noreferrer noopener"><i class="icon-instagram"></i></a></li>
-				</ul>
-			</div>
+    .site-header {
+      position: fixed;
+      z-index: 30;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding: .8rem 0;
+      transition: padding .2s ease;
+    }
+    .site-header[data-scrolled="true"] { padding-block: .45rem; }
+    .nav-wrap {
+      width: min(calc(100% - 2rem), var(--content));
+      min-height: 3.8rem;
+      margin-inline: auto;
+      padding: .4rem .45rem .4rem .65rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 1.1rem;
+      background: rgba(22, 21, 47, .91);
+      box-shadow: 0 .7rem 2rem rgba(22, 21, 47, .16);
+      backdrop-filter: blur(18px);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 850;
+      letter-spacing: -.02em;
+    }
+    .brand-mark {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: grid;
+      place-items: center;
+      border-radius: .8rem;
+      background: var(--lime);
+      color: var(--ink);
+      font-size: .86rem;
+      letter-spacing: -.06em;
+      transform: rotate(-4deg);
+    }
+    .site-nav ul { display: flex; align-items: center; gap: .25rem; margin: 0; padding: 0; list-style: none; }
+    .site-nav a {
+      display: block;
+      padding: .6rem .75rem;
+      border-radius: .75rem;
+      color: rgba(255, 255, 255, .72);
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 720;
+      transition: color .2s ease, background .2s ease;
+    }
+    .site-nav a:hover, .site-nav a[aria-current="true"] { background: rgba(255, 255, 255, .1); color: white; }
+    .nav-toggle {
+      display: none;
+      min-width: 3rem;
+      border: 0;
+      border-radius: .75rem;
+      background: var(--lime);
+      color: var(--ink);
+      padding: .65rem .75rem;
+      font: inherit;
+      font-weight: 850;
+    }
 
-		</aside>
+    main { overflow: hidden; }
+    .shell { width: min(calc(100% - 2rem), var(--content)); margin-inline: auto; }
+    .section { padding-block: clamp(5rem, 10vw, 8.5rem); scroll-margin-top: 5rem; }
+    .section-head { max-width: 52rem; margin-bottom: clamp(2rem, 5vw, 4rem); }
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin: 0 0 .9rem;
+      color: var(--violet-dark);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .kicker::before { content: ""; width: 2.2rem; height: .22rem; border-radius: 999px; background: var(--coral); }
+    h1, h2, h3 { margin-top: 0; line-height: .98; letter-spacing: -.055em; }
+    h1 { max-width: 11ch; margin-bottom: 1.5rem; font-size: clamp(3.9rem, 9vw, 8.2rem); }
+    h2 { max-width: 13ch; margin-bottom: 1.2rem; font-size: clamp(2.7rem, 6vw, 5rem); }
+    h3 { margin-bottom: .75rem; font-size: clamp(1.45rem, 2.4vw, 2rem); }
+    p { margin-top: 0; }
+    .lede { max-width: 61ch; color: var(--ink-soft); font-size: clamp(1.1rem, 2vw, 1.36rem); }
+    .arrow { display: inline-block; transition: transform .2s ease; }
+    a:hover .arrow { transform: translateX(.25rem); }
 
-		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
-				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url(assets/images/cafe-bw3.png);">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner js-fullheight">
-					   					<div class="desc">
-						   					<h1>Hi! <br>I'm Danny</h1>
-						   					<h2>Creative Engineer: Code, Create, Conquer</h2>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				   	<li style="background-image: url(assets/images/alleyway-bw.png)">
-				   		<div class="overlay"></div>
-				   		<div class="container-fluid">
-				   			<div class="row">
-					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>Explore<br>My Portfolio</h1>
-												<h2>Take a look at a variety of projects and creations, ranging from software development to creative endeavors. Find inspiration and explore the range of work I've created.</h2>
-												<p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
-											</div>
-					   				</div>
-					   			</div>
-					   		</div>
-				   		</div>
-				   	</li>
-				  	</ul>
-			  	</div>
-			</section>
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      padding: clamp(8.5rem, 14vw, 11rem) 0 5rem;
+      display: grid;
+      align-items: center;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(201, 255, 85, .52), transparent 23rem),
+        linear-gradient(120deg, var(--paper) 0 66%, var(--sky) 66% 100%);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 17rem;
+      height: 17rem;
+      right: -6rem;
+      top: 14%;
+      border: 3.5rem solid rgba(99, 91, 255, .22);
+      border-radius: 50%;
+    }
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.18fr) minmax(18rem, .72fr);
+      align-items: center;
+      gap: clamp(3rem, 8vw, 7rem);
+    }
+    .hero-copy { position: relative; z-index: 2; }
+    .hero-title .line { display: block; }
+    .hero-title .outline { color: transparent; -webkit-text-stroke: .11rem var(--ink); }
+    .hero-title .accent { position: relative; z-index: 0; width: max-content; max-width: 100%; }
+    .hero-title .accent::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      right: -.14em;
+      bottom: .04em;
+      left: -.08em;
+      height: .22em;
+      background: var(--coral);
+      transform: rotate(-1.2deg);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+    .button {
+      min-height: 3.15rem;
+      padding: .75rem 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .55rem;
+      border: 2px solid var(--ink);
+      border-radius: .9rem;
+      background: var(--ink);
+      color: white;
+      box-shadow: .32rem .32rem 0 var(--coral);
+      text-decoration: none;
+      font-weight: 850;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .button:hover { transform: translate(-.1rem, -.1rem); box-shadow: .48rem .48rem 0 var(--coral); }
+    .button.light { background: transparent; color: var(--ink); box-shadow: none; }
+    .button.light:hover { background: white; }
 
-			<section class="colorlib-about" data-section="about">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="col-md-12">
-									<div class="about-desc">
-										<span class="heading-meta">About Us</span>
-										<h2 class="colorlib-heading">Who Am I?</h2>
+    .portrait-stage { position: relative; width: min(100%, 27rem); justify-self: end; }
+    .portrait-stage::before, .portrait-stage::after { content: ""; position: absolute; border-radius: 1.8rem; }
+    .portrait-stage::before { inset: -1.1rem 1.8rem 1.5rem -1.2rem; background: var(--violet); transform: rotate(-4deg); }
+    .portrait-stage::after { width: 6rem; height: 6rem; right: -2rem; bottom: -1.5rem; border: 1rem solid var(--lime); border-radius: 50%; }
+    .portrait-frame {
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      padding: .65rem;
+      border: .16rem solid var(--ink);
+      border-radius: 2rem 5rem 2rem 5rem;
+      background: var(--paper-2);
+      box-shadow: var(--shadow);
+      transform: rotate(1.7deg);
+    }
+    .portrait-frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 1.45rem 4.35rem 1.45rem 4.35rem;
+    }
+    .portrait-label {
+      position: absolute;
+      z-index: 3;
+      right: -1.2rem;
+      top: 1.5rem;
+      padding: .62rem .8rem;
+      border: 2px solid var(--ink);
+      border-radius: .75rem;
+      background: var(--lime);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      transform: rotate(4deg);
+    }
 
-										<p>
-											<strong>Hello, I'm Danny!</strong><br>
-											I'm a passionate software engineer with a love for creativity and innovation.
-											By day, I specialize in crafting elegant solutions to complex technological challenges.
-											Beyond coding, I'm an avid explorer. Whether I'm diving into 3D printing projects,
-											capturing moments through video creation, or perfecting my gymnastics skills,
-											I'm always pushing the boundaries of what's possible. Join me on this journey
-											of technology and creativity.
-										</p>
+    .role-strip { overflow: hidden; border-block: 2px solid var(--ink); background: var(--ink); color: white; }
+    .role-track { width: max-content; display: flex; align-items: center; animation: ticker 30s linear infinite; }
+    .role-track span { display: flex; align-items: center; gap: 1.1rem; padding: .92rem 1.1rem; font-weight: 830; letter-spacing: .04em; text-transform: uppercase; }
+    .role-track span::after { content: "✦"; color: var(--lime); }
+    .role-strip:hover .role-track { animation-play-state: paused; }
+    @keyframes ticker { to { transform: translateX(-50%); } }
 
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInTop">
-									<div id="service-1" class="services services-clip color-1">
-										<span class="icon2"><i class="icon-data"></i></span>
-										<h3>Software Development</h3>
-										<div class="video-container">
-											<video src="images/20220623_213644_1.mp4" muted></video>
-											<div class="overlay"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInLeft">
-									<div id="service-2" class="services services-clip color-2">
-										<span class="icon2"><i class="icon-video-outline"></i></span>
-										<h3>Video Editing</h3>
-										<div class="video-container">
-											<video src="images/20220623_213644_1.mp4" muted></video>
-											<div class="overlay"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInRight">
-									<div id="service-3" class="services services-clip color-3">
-										<span class="icon2"><i class="icon-cog-outline"></i></span>
-										<h3>3D Printing / Design</h3>
-										<div class="video-container">
-											<video src="images/20220623_213644_1.mp4" muted></video>
-											<div class="overlay"></div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3 animate-box" data-animate-effect="fadeInBottom">
-									<div id="service-4" class="services services-clip color-4" >
-										<span class="icon2"><i class="icon-heart-outline"></i></span>
-										<h3>Gymnastics & Fitness</h3>
-										<div class="video-container">
-											<video src="images/20220623_213644_1.mp4" muted></video>
-											<div class="overlay"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-									<div class="hire">
-										<h2>Senior Hybris Developer!</h2>
-										<a href="#" class="btn-hire">Hire me</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    .intro { position: relative; background: var(--paper-2); }
+    .intro-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(2rem, 8vw, 7rem); }
+    .big-note { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.25; letter-spacing: -.035em; font-weight: 750; }
+    .big-note mark { padding: .05em .15em; background: var(--lime); color: var(--ink); }
+    .principles { display: grid; gap: 0; border-top: 1px solid var(--line); }
+    .principle { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+    .principle strong { color: var(--violet-dark); font-size: 1.15rem; }
+    .principle p { margin: 0; color: var(--ink-soft); }
 
+    .capabilities { background: var(--ink); color: white; }
+    .capabilities .kicker { color: var(--lime); }
+    .capabilities .kicker::before { background: var(--coral); }
+    .capabilities .lede { color: rgba(255,255,255,.68); }
+    .bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+    .tile {
+      position: relative;
+      min-height: 17rem;
+      overflow: hidden;
+      padding: clamp(1.4rem, 3vw, 2rem);
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+    }
+    .tile h3 { max-width: 12ch; }
+    .tile p { max-width: 40ch; margin-bottom: 0; color: rgba(255,255,255,.72); }
+    .tile-number { position: absolute; top: 1.2rem; right: 1.4rem; color: rgba(255,255,255,.38); font-weight: 850; }
+    .tile.architect { grid-column: span 7; min-height: 25rem; background: var(--violet); }
+    .tile.architect p { color: rgba(255,255,255,.84); }
+    .tile.coach { grid-column: span 5; background: var(--coral); color: var(--ink); }
+    .tile.coach p { color: rgba(22,21,47,.76); }
+    .tile.product { grid-column: span 4; background: var(--lime); color: var(--ink); }
+    .tile.product p { color: rgba(22,21,47,.76); }
+    .tile.make { grid-column: span 4; background: var(--sky); color: var(--ink); }
+    .tile.make p { color: rgba(22,21,47,.76); }
+    .tile.story { grid-column: span 4; }
+    .tile-glyph { position: absolute; right: 1.4rem; bottom: .5rem; color: rgba(255,255,255,.13); font-size: 8rem; line-height: 1; font-weight: 900; transform: rotate(-8deg); }
+    .tile.architect .tile-glyph { font-size: 12rem; }
+    .tile.product .tile-glyph, .tile.make .tile-glyph, .tile.coach .tile-glyph { color: rgba(22,21,47,.12); }
 
-			
-			<section class="colorlib-services" data-section="services">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">What I do?</span>
-							<h2 class="colorlib-heading">Here are some of my expertise</h2>
-						</div>
-					</div>
-					<div class="row row-pt-md">
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-1">
-								<span class="icon">
-									<i class="icon-bulb"></i>
-								</span>
-								<div class="desc">
-									<h3>Innovative Ideas</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-2">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-3">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Application</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-4">
-								<span class="icon">
-									<i class="icon-layers2"></i>
-								</span>
-								<div class="desc">
-									<h3>Graphic Design</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-5">
-								<span class="icon">
-									<i class="icon-data"></i>
-								</span>
-								<div class="desc">
-									<h3>Software</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 text-center animate-box">
-							<div class="services color-6">
-								<span class="icon">
-									<i class="icon-phone3"></i>
-								</span>
-								<div class="desc">
-									<h3>Application</h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
-			<div id="colorlib-counter" class="colorlib-counters" style="background-image: url(assets/images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-				<div class="overlay"></div>
-				<div class="colorlib-narrow-content">
-					<div class="row">
-					</div>
-					<div class="row">
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="309" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Cups of coffee</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="356" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Projects</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="30" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Clients</span>
-						</div>
-						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="colorlib-counter-label">Partners</span>
-						</div>
-					</div>
-				</div>
-			</div>
+    .work { background: var(--paper); }
+    .project-list { border-top: 2px solid var(--ink); }
+    .project {
+      display: grid;
+      grid-template-columns: 7rem minmax(0, .9fr) minmax(18rem, 1.1fr);
+      gap: clamp(1rem, 4vw, 3rem);
+      padding: clamp(1.8rem, 4vw, 3rem) 0;
+      border-bottom: 1px solid var(--line);
+      transition: padding .25s ease;
+    }
+    .project:hover { padding-inline: .7rem; }
+    .project-index { color: var(--violet-dark); font-weight: 900; }
+    .project h3 { margin: 0; }
+    .project-copy p { color: var(--ink-soft); }
+    .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+    .tag-list li { padding: .35rem .65rem; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; font-weight: 750; }
+    .status { width: fit-content; display: inline-flex; align-items: center; gap: .45rem; font-size: .76rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
+    .status::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 .25rem rgba(255,107,85,.18); }
 
-			<section class="colorlib-skills" data-section="skills">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Specialty</span>
-							<h2 class="colorlib-heading animate-box">My Skills</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Photoshop</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
-								    <span>75%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>jQuery</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:60%">
-								    <span>60%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>HTML5</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
-								    <span>85%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>CSS3</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>WordPress</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
-								    <span>70%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>SEO</h3>
-								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
-								    <span>80%</span>
-								  	</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    .experience { position: relative; background: var(--sky); }
+    .experience::after { content: ""; position: absolute; right: -5rem; bottom: -5rem; width: 18rem; height: 18rem; border: 4rem solid rgba(99,91,255,.18); border-radius: 50%; }
+    .experience-grid { position: relative; z-index: 1; display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(2rem, 8vw, 7rem); }
+    .role-card { padding: clamp(1.5rem, 4vw, 3rem); border: 2px solid var(--ink); border-radius: var(--radius); background: var(--paper-2); box-shadow: .6rem .6rem 0 var(--violet); }
+    .role-card h3 { font-size: clamp(2rem, 4vw, 3.3rem); }
+    .role-card ul { margin: 1.4rem 0 0; padding-left: 1.2rem; }
+    .role-card li { margin-bottom: .55rem; }
+    .privacy-note { margin-top: 1.5rem; color: var(--ink-soft); font-size: .9rem; }
 
-			<section class="colorlib-education" data-section="education">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">
-								Education
-							</span>
-							<h2 class="colorlib-heading animate-box">Degree and Certifications</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-							<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingOne">
-									        <h4 class="panel-title">
-									            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									            	SAP Commerce Cloud 6.7 Developer
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-									         <div class="panel-body">
-									            <div class="row">
-										      		<p><a href="https://www.youracclaim.com/badges/02caf035-b9fa-41f8-a2b3-b4b5c1812984/" target="_blank">Certified Professional - SAP Commerce Cloud 6.7 Developer Certification</a></p>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingTwo">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									            	SAP Hybris Commerce Business Analyst 6.3
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-									        <div class="panel-body">
-									           <p><a href="https://www.youracclaim.com/badges/37859feb-4078-4fa8-a5cc-b3a515242ab9" target="_blank">Certified Associate - SAP Hybris Commerce Business Analyst 6.3 Certification</a></p>
-									        </div>
-									    </div>
-									</div>
-									<div class="panel panel-default">
-									    <div class="panel-heading" role="tab" id="headingThree">
-									        <h4 class="panel-title">
-									            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									            	Bachelor of Computer Science Major
-									            </a>
-									        </h4>
-									    </div>
-									    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-									       <div class="panel-body">
-									            <div class="row">
-										      		<div class="col-md-6">
-										      			<p><a href="https://carleton.ca/" target="_blank">Carleton University</a></p>
-										      		</div>
-										      		<div class="col-md-6">
-										      			<p><a href="https://carleton.ca/convocation/graduate-listing-spring-2013/undergraduate-students-h-n-spring-2013/" target="_blank">Graduated Spring 2013</a></p>
-										      		</div>
-										      	</div>
-									         </div>
-									    </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    .toolkit { background: var(--paper-2); }
+    .tool-cloud { display: flex; flex-wrap: wrap; gap: .7rem; }
+    .tool-cloud span { padding: .62rem .9rem; border: 1px solid var(--line); border-radius: .8rem; background: var(--paper); font-weight: 750; }
+    .tool-cloud span:nth-child(4n+1) { background: var(--lime); border-color: var(--ink); }
+    .tool-cloud span:nth-child(5n+2) { background: var(--sky); }
+    .credentials { margin-top: 4rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .credential { padding: 1.3rem; border-top: .35rem solid var(--coral); background: var(--paper); }
+    .credential strong { display: block; margin-bottom: .3rem; }
+    .credential span { color: var(--ink-soft); }
 
-			<section class="colorlib-experience" data-section="experience">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Experience</span>
-							<h2 class="colorlib-heading animate-box">Work Experience</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-				         <div class="timeline-centered">
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
+    .contact { position: relative; background: var(--coral); }
+    .contact-panel { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; }
+    .contact h2 { max-width: 11ch; font-size: clamp(3.4rem, 8vw, 7rem); }
+    .contact .lede { color: rgba(22,21,47,.78); }
+    .contact .button { background: var(--lime); color: var(--ink); box-shadow: .4rem .4rem 0 var(--ink); }
 
-					               <div class="timeline-icon color-1">
-					                  <i class="icon-pen2"></i>
-					               </div>
+    .site-footer { background: var(--ink); color: rgba(255,255,255,.7); }
+    .footer-inner { min-height: 8rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .footer-inner p { margin: 0; }
+    .footer-inner a { color: white; font-weight: 800; }
 
-					               <div class="timeline-label">
-					                  <h2><a href="#">Senior Developer at Insight</a>
-					                  	<br/><span>July 2019 - Present</span></h2>
-					                  <p></p>
-					               </div>
-					            </div>
-					         </article>
+    .js [data-reveal] { opacity: 0; transform: translateY(1.5rem); transition: opacity .7s ease, transform .7s ease; }
+    .js [data-reveal].revealed { opacity: 1; transform: none; }
 
+    @media (max-width: 62rem) {
+      .hero { background: radial-gradient(circle at 15% 15%, rgba(201,255,85,.5), transparent 21rem), var(--paper); }
+      .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(16rem, .58fr); }
+      .tile.architect, .tile.coach { grid-column: span 6; }
+      .tile.product, .tile.make, .tile.story { grid-column: span 4; }
+      .project { grid-template-columns: 4rem .85fr 1.15fr; }
+    }
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-2">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Senior Developer at Gorilla Group</a>
-					               		<br/><span>Aug 2017 - Jun 2019</span></h2>
-					                  <p>
-					                  	<ul>
-					                  		<li>Developed Hybris implementations from the creation phase all the way to launch for projects such as Mercedes Benz Canada and Benjamin Moore’s & Co.</li>
-					                  		<li>Setup and implemented content search using Apache Nutch to index the pages crawled to Solr</li>
-					                  		<li>Facilitated monthly meetings with developers along with providing annual performance reviews through the role of a people’s manager</li>
-					                  		<li>Prioritized tasks, delegated work, manage pull requests and facilitated code reviews</li>
-					                  		<li>Automated the setup of developer environment for linux/OSX using bashrc and added useful aliases to remove the need for repetitive commands</li>
-					                  		<li>Effectively managed to deliver tech designs and functional specifications by breaking down the tasks and delegating the work to the development team</li>
-					                  		<li>Collaborated with the project manager and technical architect to plan sprints</li>
-					                  		<li>Developed RESTful Web service implementations for the access and modifications of users, storefront pages, products, orders, and the Hybris OCC module</li>
-					                  		<li>Implemented end to end solutions with scalability, performance, and optimization in mind</li>
-					                  		<li>Optimized and refactored the Benjamin Moore’s Corporation B2B site, increasing the page load times from over 10 seconds to under 1</li>
-					                  		<li>Some experience with Adobe Experience Manager and the Magento platform</li>
-					                  	</ul>
-					                  </p>
-					               </div>
-					            </div>
-					         </article>
+    @media (max-width: 48rem) {
+      .nav-toggle { display: block; }
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 4.9rem;
+        right: 1rem;
+        left: 1rem;
+        padding: .75rem;
+        border-radius: 1rem;
+        background: var(--ink);
+        box-shadow: var(--shadow);
+      }
+      .site-nav[data-open="true"] { display: block; }
+      .site-nav ul { align-items: stretch; flex-direction: column; }
+      .site-nav a { padding: .8rem; }
+      .hero { padding-top: 8rem; }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-copy { order: 2; }
+      .portrait-stage { width: min(75vw, 22rem); justify-self: center; }
+      .portrait-label { right: -1rem; }
+      .intro-grid, .experience-grid { grid-template-columns: 1fr; }
+      .bento { grid-template-columns: 1fr; }
+      .tile.architect, .tile.coach, .tile.product, .tile.make, .tile.story { grid-column: 1; min-height: 17rem; }
+      .tile.architect { min-height: 21rem; }
+      .project { grid-template-columns: 3rem 1fr; }
+      .project-copy { grid-column: 2; }
+      .credentials { grid-template-columns: 1fr; }
+      .contact-panel { grid-template-columns: 1fr; align-items: start; }
+      .footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; }
+    }
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-3">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Intermediate Developer at Publicis Sapient</a>
-					               		<br/><span>Apr 2016 - Aug 2017</span></h2>
-					                  <p>
-					                  	Enhanced a multiphase eCommerce platform for one of the biggest grocery retailers in Canada, Loblaw Digital. Develop scalable solutions with emphasis on the core features surrounding the user’s browsing experience in an agile environment. Improved various features such as the data feed ingestion, search service, checkout pages and site navigation using the Spring framework.
+    @media (max-width: 28rem) {
+      .brand > span:last-child { display: none; }
+      h1 { font-size: clamp(3.2rem, 17vw, 4.4rem); }
+      .portrait-stage { width: min(80vw, 19rem); }
+      .portrait-label { top: .6rem; right: -.4rem; }
+      .project { grid-template-columns: 1fr; }
+      .project-copy { grid-column: 1; }
+    }
 
-					                  	<ul>
-					                  		<li>Implemented the integration layer for the Flipp API populating flyer data across 9 different grocery chains</li>
-					                  		<li>Automated a scalable solution for the manual ingestion of product data, reducing the manual processing time from 3 hours to a scheduled job completing in 20 minutes for over 500 stores</li>
-					                  		<li>Implemented and updated unit test using jUnit and Mockito framework</li>
-					                  		<li>Utilized the Spring framework to develop components within Hybris</li>
-					                  		<li>Actively participated in peer code reviews to promote self-learning and improve overall code quality</li>
-					                  		<li>Contributed wiki documents to enhance the knowledge base and provide clear communication within the company</li>
-					                  		<li>Utilized the singleton, dependency injection and façade design patterns</li>
-					                  	</ul>
-					          
-					                  </p>
-					               </div>
-					            </div>
-					         </article>
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .js [data-reveal] { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInTop">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-4">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Solutions Engineer at Thinkwrap Commerce</a>
-					               		<br/><span>Jul 2013 - Apr 2016</span></h2>
-					                  <p>
-					                     <ul>
-					                        <li>Wrote maintainable and extensible code within a group environment</li>
-											<li>Managed/maintained large-scale production environments</li>
-											<li>Wrote complex ad hoc queries for data analysis and troubleshooting purposes</li>
-					                        <li>Established, implemented and documented procedures/principles in the company's Wiki</li>
-					                        <li>Implemented Cron jobs & scripts to Production environments from standardizing and maintaining folder structures to automated processes/processing</li>
-					                        <li>Maintained consistent communication with business stakeholders through incidents and problems</li>
-					                        <li>Diffused client problems through effective listening skills, positive actions and information gathering while providing 24/7 technical and application support for core business applications</li>
-					                        <li>Analyzed, diagnosed and resolved application issues utilizing logs, database queries, thread dumps, monitoring tools, server configurations and other techniques</li>
-					                        <li>Collaborated and partnered with Development and Infrastructure partners to improve release management, environment management, and production operations practices</li>
-					                        <li>Strong facilitation, negotiation, and conflict resolution skills</li>
-					                        <li>Strong practical Linux and Windows-based systems administration skills within a cloud or virtualized environment</li>
-					                     </ul>
-								      </p>
-					               </div>
-					            </div>
-					         </article>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Danny Luu, home"><span class="brand-mark">DL</span><span>Danny Luu</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#capabilities">What I do</a></li>
+          <li><a href="#work">Project lab</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-5">
-					                  <i class="icon-pen2"></i>
-					               </div>
-					               <div class="timeline-label">
-					               	<h2><a href="#">Recreational Gymnastics Coach at Ottawa Gymnastics Centre</a>
-					               		<br/><span> Jul 2008 - Sept 2012</span></h2>
-					                  <p>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="kicker">Technical architect · Hands-on builder</p>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line">Architect.</span>
+            <span class="line outline">Builder.</span>
+            <span class="line accent">Coach.</span>
+          </h1>
+          <p class="lede">I’m Danny Luu. I turn complicated systems into clear technical direction, useful products, and momentum that engineering teams can feel.</p>
+          <div class="hero-actions">
+            <a class="button" href="#capabilities">Explore what I do <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="button light" href="#work">Visit the project lab</a>
+          </div>
+        </div>
 
-					                  	<ul>
-					                  		<li>Experienced working with both children and adults at various ages. Taught novice to advanced skills on every events and apparatus</li>
-					                  		<li>Coached a group of pre-competitive boys and created routines for the individual athletes</li>
-					                  		<li>Proficient at spotting level 2 skills i.e. Front tucks & back tucks, running or standing</li>
-					                  	</ul>
-					                  </p>
-					               </div>
-					            </div>
-					         </article>
+        <div class="portrait-stage" data-reveal>
+          <div class="portrait-frame">
+            <img src="assets/images/headshot.png" alt="Portrait of Danny Luu" fetchpriority="high" decoding="async">
+          </div>
+          <span class="portrait-label">Building thoughtfully</span>
+        </div>
+      </div>
+    </section>
 
-					         <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-					            <div class="timeline-entry-inner">
-					               <div class="timeline-icon color-none">
-					               </div>
-					            </div>
-					         </article>
-					      </div>
-					   </div>
-				   </div>
-				</div>
-			</section>
+    <div class="role-strip" aria-label="Areas of focus">
+      <div class="role-track">
+        <span>System design</span><span>Commerce platforms</span><span>Technical leadership</span><span>Product thinking</span><span>3D design</span><span>Creative experiments</span>
+        <span aria-hidden="true">System design</span><span aria-hidden="true">Commerce platforms</span><span aria-hidden="true">Technical leadership</span><span aria-hidden="true">Product thinking</span><span aria-hidden="true">3D design</span><span aria-hidden="true">Creative experiments</span>
+      </div>
+    </div>
 
-			<section class="colorlib-work" data-section="work">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">My Work</span>
-							<h2 class="colorlib-heading animate-box">Recent Work</h2>
-						</div>
-					</div>
-					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-						<div class="col-md-12">
-							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(assets/images/img-1.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="wedding.html" target="_blank">My Wedding</a></h3>
-										<span>Website</span>
-										<!--<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>-->
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(assets/images/img-2.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 02</a></h3>
-										<span>Animation</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-							<div class="project" style="background-image: url(assets/images/img-3.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 03</a></h3>
-										<span>Illustration</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-							<div class="project" style="background-image: url(assets/images/img-4.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 04</a></h3>
-										<span>Application</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="project" style="background-image: url(assets/images/img-5.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 05</a></h3>
-										<span>Graphic, Logo</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="project" style="background-image: url(assets/images/img-6.jpg);">
-								<div class="desc">
-									<div class="con">
-										<h3><a href="work.html">Work 06</a></h3>
-										<span>Web Design</span>
-										<p class="icon">
-											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
+    <section class="section intro" id="about" aria-labelledby="about-title">
+      <div class="shell intro-grid">
+        <div class="section-head" data-reveal>
+          <p class="kicker">How I work</p>
+          <h2 id="about-title">Make the complex feel workable.</h2>
+        </div>
+        <div data-reveal>
+          <p class="big-note">I work where <mark>systems, people, and delivery</mark> meet. The goal is not architecture for its own sake—it is software that teams can understand, operate, and improve.</p>
+          <div class="principles">
+            <div class="principle"><strong>01</strong><p><b>Find the real constraint.</b> Get past symptoms and design around the problem that actually limits progress.</p></div>
+            <div class="principle"><strong>02</strong><p><b>Make decisions visible.</b> Clear diagrams, trade-offs, and boundaries turn a plan into something a team can own.</p></div>
+            <div class="principle"><strong>03</strong><p><b>Stay close to the build.</b> Good technical direction survives contact with code, operations, and the people doing the work.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<section class="colorlib-blog" data-section="blog">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Read</span>
-							<h2 class="colorlib-heading">Recent Blog</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="assets/images/blog-1.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Renovating National Gallery</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="assets/images/blog-2.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Web Design </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Wordpress for a Beginner</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="blog-entry">
-								<a href="blog.html" class="blog-img"><img src="assets/images/blog-3.jpg" class="img-responsive" alt="HTML5 Bootstrap Template by colorlib.com"></a>
-								<div class="desc">
-									<span><small>April 14, 2018 </small> | <small> Inspiration </small> | <small> <i class="icon-bubble3"></i> 4</small></span>
-									<h3><a href="blog.html">Make website from scratch</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12 animate-box">
-							<p><a href="#" class="btn btn-primary btn-lg btn-load-more">Load more <i class="icon-reload"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
+    <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">What I bring</p>
+          <h2 id="capabilities-title">More than one mode of making.</h2>
+          <p class="lede">My day job is technical architecture. The same curiosity also shows up in product experiments, 3D design, electronics, video, and movement.</p>
+        </div>
+        <div class="bento">
+          <article class="tile architect" data-reveal>
+            <span class="tile-number">01</span>
+            <h3>Design systems that can evolve.</h3>
+            <p>Enterprise commerce architecture, service boundaries, integration patterns, modernization paths, and reliability improvements—grounded in what a delivery team can actually support.</p>
+            <span class="tile-glyph" aria-hidden="true">⌘</span>
+          </article>
+          <article class="tile coach" data-reveal>
+            <span class="tile-number">02</span>
+            <h3>Help teams make better decisions.</h3>
+            <p>Design reviews, mentoring, technical standards, and pragmatic guidance that build shared ownership instead of bottlenecks.</p>
+            <span class="tile-glyph" aria-hidden="true">↗</span>
+          </article>
+          <article class="tile product" data-reveal>
+            <span class="tile-number">03</span>
+            <h3>Shape products.</h3>
+            <p>Translate an idea into workflows, interfaces, and an implementation path people can use.</p>
+            <span class="tile-glyph" aria-hidden="true">□</span>
+          </article>
+          <article class="tile make" data-reveal>
+            <span class="tile-number">04</span>
+            <h3>Make physical things.</h3>
+            <p>3D modelling, printing, electronics, and home automation keep experimentation tangible.</p>
+            <span class="tile-glyph" aria-hidden="true">◇</span>
+          </article>
+          <article class="tile story" data-reveal>
+            <span class="tile-number">05</span>
+            <h3>Tell the story.</h3>
+            <p>Video and visual communication help ideas land—and gymnastics and fitness keep the practice of learning honest.</p>
+            <span class="tile-glyph" aria-hidden="true">▶</span>
+          </article>
+        </div>
+      </div>
+    </section>
 
-			<section class="colorlib-contact" data-section="contact">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Get in Touch</span>
-							<h2 class="colorlib-heading">Contact</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-5">
-							<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
-								<div class="colorlib-icon">
-									<i class="icon-globe-outline"></i>
-								</div>
-								<div class="colorlib-text">
-									<p><a href="mailto:dannyluu540@gmail.com?Subject=I%20Would%20Like%20To%20Get%20In%20Contact!">dannyluu540@gmail.com</a></p>
-								</div>
-							</div>
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Project lab</p>
+          <h2 id="work-title">Work in public, without the filler.</h2>
+          <p class="lede">A living shelf for selected work. Some projects can become full case studies; others will remain concise to respect client and team confidentiality.</p>
+        </div>
+        <div class="project-list">
+          <article class="project" data-reveal>
+            <div class="project-index">01</div>
+            <div><span class="status">Current practice</span><h3>Enterprise platform architecture</h3></div>
+            <div class="project-copy">
+              <p>Turning commerce requirements, integrations, and operational constraints into a modernization path teams can deliver in stages.</p>
+              <ul class="tag-list"><li>System design</li><li>Commerce</li><li>Integration</li><li>Delivery</li></ul>
+            </div>
+          </article>
+          <article class="project" data-reveal>
+            <div class="project-index">02</div>
+            <div><span class="status">Building</span><h3>Independent product experiments</h3></div>
+            <div class="project-copy">
+              <p>Exploring marketplace workflows, useful automation, and the engineering needed to move an idea from sketch to dependable product.</p>
+              <ul class="tag-list"><li>Product thinking</li><li>Full-stack</li><li>Automation</li></ul>
+            </div>
+          </article>
+          <article class="project" data-reveal>
+            <div class="project-index">03</div>
+            <div><span class="status">Workbench</span><h3>3D design + connected making</h3></div>
+            <div class="project-copy">
+              <p>Prototypes that combine digital modelling, practical fabrication, electronics, and connected-home experiments.</p>
+              <ul class="tag-list"><li>3D printing</li><li>Electronics</li><li>Prototyping</li></ul>
+            </div>
+          </article>
+          <article class="project" data-reveal>
+            <div class="project-index">04</div>
+            <div><span class="status">Next up</span><h3>Notes from the workbench</h3></div>
+            <div class="project-copy">
+              <p>Short, useful write-ups on architecture decisions, delivery lessons, builds, and experiments—published only when there is something real to share.</p>
+              <ul class="tag-list"><li>Writing</li><li>Case studies</li><li>Lessons learned</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-						</div>
-						<!--<div class="col-md-7 col-md-push-1">
-							<div class="row">
-								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form action="">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Subject">
-										</div>
-										<div class="form-group">
-											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
-										</div>
-									</form>
-								</div>
-								
-							</div>
-						</div>-->
-					</div>
-				</div>
-			</section>
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="shell experience-grid">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Professional snapshot</p>
+          <h2 id="experience-title">Technical depth. Human scale.</h2>
+          <p class="lede">Enough context to understand how I contribute, without turning a personal site into a map of my daily life.</p>
+        </div>
+        <article class="role-card" data-reveal>
+          <span class="status">Current role</span>
+          <h3>Technical Architect<br>at Insight Enterprises</h3>
+          <ul>
+            <li>Shape enterprise commerce solutions and the integrations around them.</li>
+            <li>Guide modernization, reliability, and maintainable technical standards.</li>
+            <li>Translate between business needs, architecture, and implementation.</li>
+            <li>Mentor engineers and create clarity around difficult technical choices.</li>
+          </ul>
+          <p class="privacy-note">Previous roles span senior software development, commerce implementations, integration work, and operational tooling. Client names, timelines, and internal systems stay private.</p>
+        </article>
+      </div>
+    </section>
 
-		</div><!-- end:colorlib-main -->
-	</div><!-- end:container-wrap -->
-	</div><!-- end:colorlib-page -->
+    <section class="section toolkit" aria-labelledby="toolkit-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Toolkit</p>
+          <h2 id="toolkit-title">Technologies are tools, not the headline.</h2>
+          <p class="lede">I choose them for fit, longevity, and the team that will live with the result.</p>
+        </div>
+        <div class="tool-cloud" data-reveal aria-label="Technical skills">
+          <span>Java</span><span>Spring</span><span>SAP Commerce</span><span>REST APIs</span><span>System integration</span><span>SQL</span><span>Docker</span><span>CI/CD</span><span>Cloud platforms</span><span>Architecture diagrams</span><span>Code reviews</span><span>Technical mentoring</span>
+        </div>
+        <div class="credentials">
+          <div class="credential" data-reveal><strong>Bachelor of Computer Science</strong><span>Carleton University</span></div>
+          <div class="credential" data-reveal><strong>SAP Commerce Cloud Developer</strong><span>Professional certification</span></div>
+          <div class="credential" data-reveal><strong>SAP Commerce Business Analyst</strong><span>Associate certification</span></div>
+        </div>
+      </div>
+    </section>
 
-	<!-- jQuery -->
-	<script src="assets/js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="assets/js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="assets/js/jquery.waypoints.min.js"></script>
-	<!-- Flexslider -->
-	<script src="assets/js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<!-- Counters -->
-	<script src="assets/js/jquery.countTo.js"></script>
-	
-	
-	<!-- MAIN JS -->
-	<script src="assets/js/main.js"></script>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-panel">
+        <div data-reveal>
+          <p class="kicker">Connect</p>
+          <h2 id="contact-title">Curious people build better things.</h2>
+          <p class="lede">GitHub is the best public doorway into what I’m exploring and building.</p>
+        </div>
+        <a class="button" href="https://github.com/DannyLuu" target="_blank" rel="noreferrer noopener">Visit my GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
 
-	</body>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>Built and maintained by Danny Luu.</p>
+      <p>Fast by design · No trackers · No third-party scripts</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      const header = document.querySelector('.site-header');
+      const toggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.site-nav');
+      const links = [...nav.querySelectorAll('a')];
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      const closeNav = () => {
+        nav.dataset.open = 'false';
+        toggle.setAttribute('aria-expanded', 'false');
+      };
+
+      toggle.addEventListener('click', () => {
+        const open = nav.dataset.open !== 'true';
+        nav.dataset.open = String(open);
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+      links.forEach(link => link.addEventListener('click', closeNav));
+
+      const syncHeader = () => { header.dataset.scrolled = String(window.scrollY > 24); };
+      syncHeader();
+      window.addEventListener('scroll', syncHeader, { passive: true });
+
+      const sections = [...document.querySelectorAll('main section[id]')];
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.filter(entry => entry.isIntersecting).forEach(entry => {
+          links.forEach(link => link.removeAttribute('aria-current'));
+          const active = nav.querySelector(`a[href="#${entry.target.id}"]`);
+          if (active) active.setAttribute('aria-current', 'true');
+        });
+      }, { rootMargin: '-25% 0px -65% 0px' });
+      sections.forEach(section => sectionObserver.observe(section));
+
+      const revealItems = [...document.querySelectorAll('[data-reveal]')];
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        revealItems.forEach(item => item.classList.add('revealed'));
+      } else {
+        const revealObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: .12 });
+        revealItems.forEach(item => revealObserver.observe(item));
+      }
+    })();
+  </script>
+</body>
 </html>
-
