@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Danny Luu is a technical architect, engineering lead, and hands-on builder focused on dependable commerce platforms, thoughtful products, and stronger teams.">
   <meta name="author" content="Danny Luu">
-  <meta name="theme-color" content="#16152f">
+  <meta name="theme-color" content="#17282a">
   <script>document.documentElement.classList.add('js')</script>
 
   <meta property="og:type" content="website">
@@ -20,402 +20,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
 
-  <style>
-    :root {
-      --ink: #16152f;
-      --ink-soft: #35334d;
-      --paper: #f7f3ea;
-      --paper-2: #fffdf8;
-      --violet: #635bff;
-      --violet-dark: #3b35bb;
-      --coral: #ff6b55;
-      --lime: #c9ff55;
-      --sky: #bcecff;
-      --line: rgba(22, 21, 47, .16);
-      --shadow: 0 1.6rem 4rem rgba(38, 31, 77, .14);
-      --radius: 1.5rem;
-      --content: 75rem;
-      color-scheme: light;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font-family: "Avenir Next", Avenir, "Segoe UI", ui-sans-serif, system-ui, sans-serif;
-      font-size: 1rem;
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; }
-    button, a { -webkit-tap-highlight-color: transparent; }
-    :focus-visible { outline: .2rem solid var(--coral); outline-offset: .25rem; }
-    ::selection { background: var(--lime); color: var(--ink); }
-
-    .skip-link {
-      position: fixed;
-      z-index: 100;
-      top: 1rem;
-      left: 1rem;
-      padding: .65rem 1rem;
-      transform: translateY(-200%);
-      border-radius: .75rem;
-      background: var(--ink);
-      color: white;
-      font-weight: 800;
-    }
-    .skip-link:focus { transform: translateY(0); }
-
-    .site-header {
-      position: fixed;
-      z-index: 30;
-      top: 0;
-      right: 0;
-      left: 0;
-      padding: .8rem 0;
-      transition: padding .2s ease;
-    }
-    .site-header[data-scrolled="true"] { padding-block: .45rem; }
-    .nav-wrap {
-      width: min(calc(100% - 2rem), var(--content));
-      min-height: 3.8rem;
-      margin-inline: auto;
-      padding: .4rem .45rem .4rem .65rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      border: 1px solid rgba(255, 255, 255, .12);
-      border-radius: 1.1rem;
-      background: rgba(22, 21, 47, .91);
-      box-shadow: 0 .7rem 2rem rgba(22, 21, 47, .16);
-      backdrop-filter: blur(18px);
-    }
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: .7rem;
-      color: white;
-      text-decoration: none;
-      font-weight: 850;
-      letter-spacing: -.02em;
-    }
-    .brand-mark {
-      width: 2.5rem;
-      height: 2.5rem;
-      display: grid;
-      place-items: center;
-      border-radius: .8rem;
-      background: var(--lime);
-      color: var(--ink);
-      font-size: .86rem;
-      letter-spacing: -.06em;
-      transform: rotate(-4deg);
-    }
-    .site-nav ul { display: flex; align-items: center; gap: .25rem; margin: 0; padding: 0; list-style: none; }
-    .site-nav a {
-      display: block;
-      padding: .6rem .75rem;
-      border-radius: .75rem;
-      color: rgba(255, 255, 255, .72);
-      text-decoration: none;
-      font-size: .88rem;
-      font-weight: 720;
-      transition: color .2s ease, background .2s ease;
-    }
-    .site-nav a:hover, .site-nav a[aria-current="true"] { background: rgba(255, 255, 255, .1); color: white; }
-    .nav-toggle {
-      display: none;
-      min-width: 3rem;
-      border: 0;
-      border-radius: .75rem;
-      background: var(--lime);
-      color: var(--ink);
-      padding: .65rem .75rem;
-      font: inherit;
-      font-weight: 850;
-    }
-
-    main { overflow: hidden; }
-    .shell { width: min(calc(100% - 2rem), var(--content)); margin-inline: auto; }
-    .section { padding-block: clamp(5rem, 10vw, 8.5rem); scroll-margin-top: 5rem; }
-    .section-head { max-width: 52rem; margin-bottom: clamp(2rem, 5vw, 4rem); }
-    .kicker {
-      display: flex;
-      align-items: center;
-      gap: .65rem;
-      margin: 0 0 .9rem;
-      color: var(--violet-dark);
-      font-size: .78rem;
-      font-weight: 900;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-    }
-    .kicker::before { content: ""; width: 2.2rem; height: .22rem; border-radius: 999px; background: var(--coral); }
-    h1, h2, h3 { margin-top: 0; line-height: .98; letter-spacing: -.055em; }
-    h1 { max-width: 11ch; margin-bottom: 1.5rem; font-size: clamp(3.9rem, 9vw, 8.2rem); }
-    h2 { max-width: 13ch; margin-bottom: 1.2rem; font-size: clamp(2.7rem, 6vw, 5rem); }
-    h3 { margin-bottom: .75rem; font-size: clamp(1.45rem, 2.4vw, 2rem); }
-    p { margin-top: 0; }
-    .lede { max-width: 61ch; color: var(--ink-soft); font-size: clamp(1.1rem, 2vw, 1.36rem); }
-    .arrow { display: inline-block; transition: transform .2s ease; }
-    a:hover .arrow { transform: translateX(.25rem); }
-
-    .hero {
-      position: relative;
-      min-height: 100svh;
-      padding: clamp(8.5rem, 14vw, 11rem) 0 5rem;
-      display: grid;
-      align-items: center;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(201, 255, 85, .52), transparent 23rem),
-        linear-gradient(120deg, var(--paper) 0 66%, var(--sky) 66% 100%);
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 17rem;
-      height: 17rem;
-      right: -6rem;
-      top: 14%;
-      border: 3.5rem solid rgba(99, 91, 255, .22);
-      border-radius: 50%;
-    }
-    .hero-grid {
-      position: relative;
-      display: grid;
-      grid-template-columns: minmax(0, 1.18fr) minmax(18rem, .72fr);
-      align-items: center;
-      gap: clamp(3rem, 8vw, 7rem);
-    }
-    .hero-copy { position: relative; z-index: 2; }
-    .hero-title .line { display: block; }
-    .hero-title .outline { color: transparent; -webkit-text-stroke: .11rem var(--ink); }
-    .hero-title .accent { position: relative; z-index: 0; width: max-content; max-width: 100%; }
-    .hero-title .accent::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      right: -.14em;
-      bottom: .04em;
-      left: -.08em;
-      height: .22em;
-      background: var(--coral);
-      transform: rotate(-1.2deg);
-    }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
-    .button {
-      min-height: 3.15rem;
-      padding: .75rem 1.1rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: .55rem;
-      border: 2px solid var(--ink);
-      border-radius: .9rem;
-      background: var(--ink);
-      color: white;
-      box-shadow: .32rem .32rem 0 var(--coral);
-      text-decoration: none;
-      font-weight: 850;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-    .button:hover { transform: translate(-.1rem, -.1rem); box-shadow: .48rem .48rem 0 var(--coral); }
-    .button.light { background: transparent; color: var(--ink); box-shadow: none; }
-    .button.light:hover { background: white; }
-
-    .portrait-stage { position: relative; width: min(100%, 27rem); justify-self: end; }
-    .portrait-stage::before, .portrait-stage::after { content: ""; position: absolute; border-radius: 1.8rem; }
-    .portrait-stage::before { inset: -1.1rem 1.8rem 1.5rem -1.2rem; background: var(--violet); transform: rotate(-4deg); }
-    .portrait-stage::after { width: 6rem; height: 6rem; right: -2rem; bottom: -1.5rem; border: 1rem solid var(--lime); border-radius: 50%; }
-    .portrait-frame {
-      position: relative;
-      z-index: 1;
-      overflow: hidden;
-      padding: .65rem;
-      border: .16rem solid var(--ink);
-      border-radius: 2rem 5rem 2rem 5rem;
-      background: var(--paper-2);
-      box-shadow: var(--shadow);
-      transform: rotate(1.7deg);
-    }
-    .portrait-frame img {
-      width: 100%;
-      height: auto;
-      border-radius: 1.45rem 4.35rem 1.45rem 4.35rem;
-    }
-    .portrait-label {
-      position: absolute;
-      z-index: 3;
-      right: -1.2rem;
-      top: 1.5rem;
-      padding: .62rem .8rem;
-      border: 2px solid var(--ink);
-      border-radius: .75rem;
-      background: var(--lime);
-      font-size: .78rem;
-      font-weight: 900;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      transform: rotate(4deg);
-    }
-
-    .role-strip { overflow: hidden; border-block: 2px solid var(--ink); background: var(--ink); color: white; }
-    .role-track { width: max-content; display: flex; align-items: center; animation: ticker 30s linear infinite; }
-    .role-track span { display: flex; align-items: center; gap: 1.1rem; padding: .92rem 1.1rem; font-weight: 830; letter-spacing: .04em; text-transform: uppercase; }
-    .role-track span::after { content: "✦"; color: var(--lime); }
-    .role-strip:hover .role-track { animation-play-state: paused; }
-    @keyframes ticker { to { transform: translateX(-50%); } }
-
-    .intro { position: relative; background: var(--paper-2); }
-    .intro-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(2rem, 8vw, 7rem); }
-    .big-note { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.25; letter-spacing: -.035em; font-weight: 750; }
-    .big-note mark { padding: .05em .15em; background: var(--lime); color: var(--ink); }
-    .principles { display: grid; gap: 0; border-top: 1px solid var(--line); }
-    .principle { display: grid; grid-template-columns: 3rem 1fr; gap: 1rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
-    .principle strong { color: var(--violet-dark); font-size: 1.15rem; }
-    .principle p { margin: 0; color: var(--ink-soft); }
-
-    .capabilities { background: var(--ink); color: white; }
-    .capabilities .kicker { color: var(--lime); }
-    .capabilities .kicker::before { background: var(--coral); }
-    .capabilities .lede { color: rgba(255,255,255,.68); }
-    .bento { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
-    .tile {
-      position: relative;
-      min-height: 17rem;
-      overflow: hidden;
-      padding: clamp(1.4rem, 3vw, 2rem);
-      border: 1px solid rgba(255,255,255,.13);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.06);
-    }
-    .tile h3 { max-width: 12ch; }
-    .tile p { max-width: 40ch; margin-bottom: 0; color: rgba(255,255,255,.72); }
-    .tile-number { position: absolute; top: 1.2rem; right: 1.4rem; color: rgba(255,255,255,.38); font-weight: 850; }
-    .tile.architect { grid-column: span 7; min-height: 25rem; background: var(--violet); }
-    .tile.architect p { color: rgba(255,255,255,.84); }
-    .tile.coach { grid-column: span 5; background: var(--coral); color: var(--ink); }
-    .tile.coach p { color: rgba(22,21,47,.76); }
-    .tile.product { grid-column: span 4; background: var(--lime); color: var(--ink); }
-    .tile.product p { color: rgba(22,21,47,.76); }
-    .tile.make { grid-column: span 4; background: var(--sky); color: var(--ink); }
-    .tile.make p { color: rgba(22,21,47,.76); }
-    .tile.story { grid-column: span 4; }
-    .tile-glyph { position: absolute; right: 1.4rem; bottom: .5rem; color: rgba(255,255,255,.13); font-size: 8rem; line-height: 1; font-weight: 900; transform: rotate(-8deg); }
-    .tile.architect .tile-glyph { font-size: 12rem; }
-    .tile.product .tile-glyph, .tile.make .tile-glyph, .tile.coach .tile-glyph { color: rgba(22,21,47,.12); }
-
-    .work { background: var(--paper); }
-    .project-list { border-top: 2px solid var(--ink); }
-    .project {
-      display: grid;
-      grid-template-columns: 7rem minmax(0, .9fr) minmax(18rem, 1.1fr);
-      gap: clamp(1rem, 4vw, 3rem);
-      padding: clamp(1.8rem, 4vw, 3rem) 0;
-      border-bottom: 1px solid var(--line);
-      transition: padding .25s ease;
-    }
-    .project:hover { padding-inline: .7rem; }
-    .project-index { color: var(--violet-dark); font-weight: 900; }
-    .project h3 { margin: 0; }
-    .project-copy p { color: var(--ink-soft); }
-    .tag-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0 0; padding: 0; list-style: none; }
-    .tag-list li { padding: .35rem .65rem; border: 1px solid var(--line); border-radius: 999px; font-size: .8rem; font-weight: 750; }
-    .status { width: fit-content; display: inline-flex; align-items: center; gap: .45rem; font-size: .76rem; font-weight: 900; letter-spacing: .09em; text-transform: uppercase; }
-    .status::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: var(--coral); box-shadow: 0 0 0 .25rem rgba(255,107,85,.18); }
-
-    .experience { position: relative; background: var(--sky); }
-    .experience::after { content: ""; position: absolute; right: -5rem; bottom: -5rem; width: 18rem; height: 18rem; border: 4rem solid rgba(99,91,255,.18); border-radius: 50%; }
-    .experience-grid { position: relative; z-index: 1; display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(2rem, 8vw, 7rem); }
-    .role-card { padding: clamp(1.5rem, 4vw, 3rem); border: 2px solid var(--ink); border-radius: var(--radius); background: var(--paper-2); box-shadow: .6rem .6rem 0 var(--violet); }
-    .role-card h3 { font-size: clamp(2rem, 4vw, 3.3rem); }
-    .role-card ul { margin: 1.4rem 0 0; padding-left: 1.2rem; }
-    .role-card li { margin-bottom: .55rem; }
-    .privacy-note { margin-top: 1.5rem; color: var(--ink-soft); font-size: .9rem; }
-
-    .toolkit { background: var(--paper-2); }
-    .tool-cloud { display: flex; flex-wrap: wrap; gap: .7rem; }
-    .tool-cloud span { padding: .62rem .9rem; border: 1px solid var(--line); border-radius: .8rem; background: var(--paper); font-weight: 750; }
-    .tool-cloud span:nth-child(4n+1) { background: var(--lime); border-color: var(--ink); }
-    .tool-cloud span:nth-child(5n+2) { background: var(--sky); }
-    .credentials { margin-top: 4rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-    .credential { padding: 1.3rem; border-top: .35rem solid var(--coral); background: var(--paper); }
-    .credential strong { display: block; margin-bottom: .3rem; }
-    .credential span { color: var(--ink-soft); }
-
-    .contact { position: relative; background: var(--coral); }
-    .contact-panel { position: relative; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; }
-    .contact h2 { max-width: 11ch; font-size: clamp(3.4rem, 8vw, 7rem); }
-    .contact .lede { color: rgba(22,21,47,.78); }
-    .contact .button { background: var(--lime); color: var(--ink); box-shadow: .4rem .4rem 0 var(--ink); }
-
-    .site-footer { background: var(--ink); color: rgba(255,255,255,.7); }
-    .footer-inner { min-height: 8rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-    .footer-inner p { margin: 0; }
-    .footer-inner a { color: white; font-weight: 800; }
-
-    .js [data-reveal] { opacity: 0; transform: translateY(1.5rem); transition: opacity .7s ease, transform .7s ease; }
-    .js [data-reveal].revealed { opacity: 1; transform: none; }
-
-    @media (max-width: 62rem) {
-      .hero { background: radial-gradient(circle at 15% 15%, rgba(201,255,85,.5), transparent 21rem), var(--paper); }
-      .hero-grid { grid-template-columns: minmax(0, 1fr) minmax(16rem, .58fr); }
-      .tile.architect, .tile.coach { grid-column: span 6; }
-      .tile.product, .tile.make, .tile.story { grid-column: span 4; }
-      .project { grid-template-columns: 4rem .85fr 1.15fr; }
-    }
-
-    @media (max-width: 48rem) {
-      .nav-toggle { display: block; }
-      .site-nav {
-        display: none;
-        position: absolute;
-        top: 4.9rem;
-        right: 1rem;
-        left: 1rem;
-        padding: .75rem;
-        border-radius: 1rem;
-        background: var(--ink);
-        box-shadow: var(--shadow);
-      }
-      .site-nav[data-open="true"] { display: block; }
-      .site-nav ul { align-items: stretch; flex-direction: column; }
-      .site-nav a { padding: .8rem; }
-      .hero { padding-top: 8rem; }
-      .hero-grid { grid-template-columns: 1fr; }
-      .hero-copy { order: 2; }
-      .portrait-stage { width: min(75vw, 22rem); justify-self: center; }
-      .portrait-label { right: -1rem; }
-      .intro-grid, .experience-grid { grid-template-columns: 1fr; }
-      .bento { grid-template-columns: 1fr; }
-      .tile.architect, .tile.coach, .tile.product, .tile.make, .tile.story { grid-column: 1; min-height: 17rem; }
-      .tile.architect { min-height: 21rem; }
-      .project { grid-template-columns: 3rem 1fr; }
-      .project-copy { grid-column: 2; }
-      .credentials { grid-template-columns: 1fr; }
-      .contact-panel { grid-template-columns: 1fr; align-items: start; }
-      .footer-inner { align-items: flex-start; flex-direction: column; justify-content: center; }
-    }
-
-    @media (max-width: 28rem) {
-      .brand > span:last-child { display: none; }
-      h1 { font-size: clamp(3.2rem, 17vw, 4.4rem); }
-      .portrait-stage { width: min(80vw, 19rem); }
-      .portrait-label { top: .6rem; right: -.4rem; }
-      .project { grid-template-columns: 1fr; }
-      .project-copy { grid-column: 1; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-      .js [data-reveal] { opacity: 1; transform: none; }
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -428,7 +33,8 @@
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#capabilities">What I do</a></li>
-          <li><a href="#work">Project lab</a></li>
+          <li><a href="#work">Selected work</a></li>
+          <li><a href="issf-trainer/">ISSF Trainer</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Connect</a></li>
         </ul>
@@ -444,12 +50,12 @@
           <h1 class="hero-title" id="hero-title">
             <span class="line">Architect.</span>
             <span class="line outline">Builder.</span>
-            <span class="line accent">Coach.</span>
+            <span class="line accent">Creator.</span>
           </h1>
-          <p class="lede">I’m Danny Luu. I turn complicated systems into clear technical direction, useful products, and momentum that engineering teams can feel.</p>
+          <p class="lede">I’m Danny Luu, a technical architect and hands-on maker. I turn complex engineering challenges into clear direction, reliable products, and stronger teams.</p>
           <div class="hero-actions">
             <a class="button" href="#capabilities">Explore what I do <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="button light" href="#work">Visit the project lab</a>
+            <a class="button light" href="issf-trainer/">Meet ISSF Trainer <span class="arrow" aria-hidden="true">↗</span></a>
           </div>
         </div>
 
@@ -531,10 +137,22 @@
     <section class="section work" id="work" aria-labelledby="work-title">
       <div class="shell">
         <div class="section-head" data-reveal>
-          <p class="kicker">Project lab</p>
-          <h2 id="work-title">Work in public, without the filler.</h2>
-          <p class="lede">A living shelf for selected work. Some projects can become full case studies; others will remain concise to respect client and team confidentiality.</p>
+          <p class="kicker">Selected work</p>
+          <h2 id="work-title">Ideas worth building.</h2>
+          <p class="lede">A selection of professional practice, personal products, and engineering experiments. The details matter more than a long list of logos.</p>
         </div>
+        <article class="featured-project" data-reveal aria-labelledby="featured-title">
+          <div>
+            <p class="kicker">Featured independent product · In development</p>
+            <h3 id="featured-title">ISSF Trainer</h3>
+            <p class="lede">An accessible training companion for Olympic-style sport shooting. Practice competition timing, learn the disciplines, and build consistency with tools designed around the sport.</p>
+            <ul class="tag-list" aria-label="Product areas"><li>ISSF disciplines</li><li>Practice tools</li><li>Competition learning</li></ul>
+            <p style="margin:1.7rem 0 0"><a class="button" href="issf-trainer/">Explore the product <span class="arrow" aria-hidden="true">↗</span></a></p>
+          </div>
+          <div class="product-visual" role="img" aria-label="Abstract concentric target graphic representing precision sport training">
+            <div class="ring-mark" aria-hidden="true"></div><span class="visual-caption">Practice with purpose</span>
+          </div>
+        </article>
         <div class="project-list">
           <article class="project" data-reveal>
             <div class="project-index">01</div>
@@ -548,7 +166,7 @@
             <div class="project-index">02</div>
             <div><span class="status">Building</span><h3>Independent product experiments</h3></div>
             <div class="project-copy">
-              <p>Exploring marketplace workflows, useful automation, and the engineering needed to move an idea from sketch to dependable product.</p>
+              <p>Exploring marketplace workflows, useful automation, and the engineering needed to move an idea from sketch to dependable product. Some work is private while in development.</p>
               <ul class="tag-list"><li>Product thinking</li><li>Full-stack</li><li>Automation</li></ul>
             </div>
           </article>
@@ -567,6 +185,30 @@
               <p>Short, useful write-ups on architecture decisions, delivery lessons, builds, and experiments—published only when there is something real to share.</p>
               <ul class="tag-list"><li>Writing</li><li>Case studies</li><li>Lessons learned</li></ul>
             </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section channel-section" id="channels" aria-labelledby="channels-title">
+      <div class="shell">
+        <div class="section-head" data-reveal>
+          <p class="kicker">Elsewhere on the web</p>
+          <h2 id="channels-title">Build, share, repeat.</h2>
+          <p class="lede">Different formats for the same curiosity: writing software, exploring ideas, and sharing the process.</p>
+        </div>
+        <div class="channel-grid">
+          <article class="channel-card" data-reveal>
+            <p class="channel-label">Code &amp; experiments</p>
+            <h3>GitHub</h3>
+            <p>A home for public repositories, technical experiments, and selected projects. Not every independent product is open source.</p>
+            <a class="link-inline" href="https://github.com/DannyLuu" target="_blank" rel="noopener noreferrer">Explore public work <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="channel-card" data-reveal>
+            <p class="channel-label">Video &amp; process</p>
+            <h3>YouTube</h3>
+            <p>A place for hands-on projects, ideas, and things worth demonstrating. Featured videos and the verified channel link can be added here as the collection grows.</p>
+            <span class="status">Channel details to be added</span>
           </article>
         </div>
       </div>
@@ -616,9 +258,9 @@
         <div data-reveal>
           <p class="kicker">Connect</p>
           <h2 id="contact-title">Curious people build better things.</h2>
-          <p class="lede">GitHub is the best public doorway into what I’m exploring and building.</p>
+          <p class="lede">Connect with me professionally, explore public work, or discover the products I’m building.</p>
         </div>
-        <a class="button" href="https://github.com/DannyLuu" target="_blank" rel="noreferrer noopener">Visit my GitHub <span class="arrow" aria-hidden="true">↗</span></a>
+        <div class="hero-actions"><a class="button" href="https://www.linkedin.com/in/luudanny/" target="_blank" rel="noreferrer noopener">Connect on LinkedIn <span class="arrow" aria-hidden="true">↗</span></a><a class="button light" href="https://github.com/DannyLuu" target="_blank" rel="noreferrer noopener" style="border-color:rgba(255,255,255,.35);color:white;background:transparent">GitHub ↗</a></div>
       </div>
     </section>
   </main>
@@ -631,55 +273,6 @@
     </div>
   </footer>
 
-  <script>
-    (() => {
-      const header = document.querySelector('.site-header');
-      const toggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.site-nav');
-      const links = [...nav.querySelectorAll('a')];
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-      const closeNav = () => {
-        nav.dataset.open = 'false';
-        toggle.setAttribute('aria-expanded', 'false');
-      };
-
-      toggle.addEventListener('click', () => {
-        const open = nav.dataset.open !== 'true';
-        nav.dataset.open = String(open);
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-      links.forEach(link => link.addEventListener('click', closeNav));
-
-      const syncHeader = () => { header.dataset.scrolled = String(window.scrollY > 24); };
-      syncHeader();
-      window.addEventListener('scroll', syncHeader, { passive: true });
-
-      const sections = [...document.querySelectorAll('main section[id]')];
-      const sectionObserver = new IntersectionObserver(entries => {
-        entries.filter(entry => entry.isIntersecting).forEach(entry => {
-          links.forEach(link => link.removeAttribute('aria-current'));
-          const active = nav.querySelector(`a[href="#${entry.target.id}"]`);
-          if (active) active.setAttribute('aria-current', 'true');
-        });
-      }, { rootMargin: '-25% 0px -65% 0px' });
-      sections.forEach(section => sectionObserver.observe(section));
-
-      const revealItems = [...document.querySelectorAll('[data-reveal]')];
-      if (reduceMotion || !('IntersectionObserver' in window)) {
-        revealItems.forEach(item => item.classList.add('revealed'));
-      } else {
-        const revealObserver = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('revealed');
-              revealObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: .12 });
-        revealItems.forEach(item => revealObserver.observe(item));
-      }
-    })();
-  </script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>
