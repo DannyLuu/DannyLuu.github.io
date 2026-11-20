@@ -22,14 +22,17 @@
       window.addEventListener('scroll', syncHeader, { passive: true });
 
       const sections = [...document.querySelectorAll('main section[id]')];
-      const sectionObserver = new IntersectionObserver(entries => {
-        entries.filter(entry => entry.isIntersecting).forEach(entry => {
-          links.forEach(link => link.removeAttribute('aria-current'));
-          const active = nav.querySelector(`a[href="#${entry.target.id}"]`);
-          if (active) active.setAttribute('aria-current', 'true');
-        });
-      }, { rootMargin: '-25% 0px -65% 0px' });
-      sections.forEach(section => sectionObserver.observe(section));
+      const localLinks = links.filter(link => link.getAttribute('href').startsWith('#'));
+      if ('IntersectionObserver' in window && localLinks.length) {
+        const sectionObserver = new IntersectionObserver(entries => {
+          entries.filter(entry => entry.isIntersecting).forEach(entry => {
+            localLinks.forEach(link => link.removeAttribute('aria-current'));
+            const active = nav.querySelector(`a[href="#${entry.target.id}"]`);
+            if (active) active.setAttribute('aria-current', 'true');
+          });
+        }, { rootMargin: '-25% 0px -65% 0px' });
+        sections.forEach(section => sectionObserver.observe(section));
+      }
 
       const revealItems = [...document.querySelectorAll('[data-reveal]')];
       if (reduceMotion || !('IntersectionObserver' in window)) {
