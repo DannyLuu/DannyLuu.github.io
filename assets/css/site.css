@@ -523,3 +523,10 @@ h2 { line-height: 1.04; }
   .product-cta .cta-wrap { display:block; }
   .product-cta .button { margin-top:1.5rem; }
 }
+
+/* Shared link and status treatments */
+.site-nav a[aria-current="page"] { background:rgba(255,255,255,.12); color:white; }
+.featured-actions { margin:1.7rem 0 0; }
+.contact .button.light { border-color:rgba(255,255,255,.35); color:white; background:transparent; }
+.contact .button.light:hover { background:rgba(255,255,255,.1); }
+.featured-project .button:focus-visible, .product-hero .button:focus-visible { outline-color:#fff; }
