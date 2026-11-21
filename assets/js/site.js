@@ -1,4 +1,7 @@
     (() => {
+      document.querySelectorAll('[data-current-year]').forEach(node => {
+        node.textContent = String(new Date().getFullYear());
+      });
       const header = document.querySelector('.site-header');
       const toggle = document.querySelector('.nav-toggle');
       const nav = document.querySelector('.site-nav');
