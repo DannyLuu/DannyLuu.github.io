@@ -240,14 +240,8 @@
       transform: rotate(4deg);
     }
 
-    .role-strip { overflow: hidden; border-block: 2px solid var(--ink); background: var(--ink); color: white; }
-    .role-track { width: max-content; display: flex; align-items: center; animation: ticker 30s linear infinite; }
-    .role-track span { display: flex; align-items: center; gap: 1.1rem; padding: .92rem 1.1rem; font-weight: 830; letter-spacing: .04em; text-transform: uppercase; }
-    .role-track span::after { content: "✦"; color: var(--muted); }
-    .role-strip:hover .role-track { animation-play-state: paused; }
-    @keyframes ticker { to { transform: translateX(-50%); } }
 
-    .intro { position: relative; background: var(--paper-2); }
+    .intro { position: relative; background: var(--paper-2); border-top: 1px solid var(--line); }
     .intro-grid { display: grid; grid-template-columns: .72fr 1.28fr; gap: clamp(2rem, 8vw, 7rem); }
     .big-note { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.25; letter-spacing: -.035em; font-weight: 750; }
     .big-note mark { padding: .05em .15em; background: var(--muted); color: var(--ink); }
@@ -442,10 +436,6 @@ h2 { line-height:1.04; }
   border-radius:1.5rem 3.5rem 1.5rem 3.5rem; transform:rotate(.8deg); }
 .portrait-frame img { width:100%; height:auto; object-fit:contain; border-radius:1.2rem 3.1rem 1.2rem 3.1rem; }
 .portrait-label { border:1px solid rgba(27,25,26,.3); background:#f7f2f1; transform:rotate(2deg); font-weight:750; }
-.role-strip { border-color:#222; background:#1c1a1b; }
-.role-track { animation-duration:48s; }
-.role-track span { font-weight:680; letter-spacing:.055em; }
-.role-track span::after { content:"✳"; color:#ce7180; font-size:.7rem; }
 .big-note mark { background:#f0d9df; color:#281d20; }
 .intro .lede { margin:0 0 1.8rem; }
 .principle strong,.project-index { color:var(--accent-deep); }
@@ -605,7 +595,3 @@ h2 { line-height:1.04; }
   .section { padding-block:clamp(3.5rem,9vw,5rem); }
 }
 @media (max-width:28rem) { .media-pair { grid-template-columns:1fr; } }
-@media (prefers-reduced-motion:reduce) {
-  .role-track { width:100%; flex-wrap:wrap; justify-content:center; animation:none; }
-  .role-track span[aria-hidden="true"] { display:none; }
-}
