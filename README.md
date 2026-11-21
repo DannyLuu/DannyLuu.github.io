@@ -6,7 +6,7 @@ A lightweight, accessible personal portfolio and product hub built with static H
 
 ## Pages
 
-- `index.html` — personal profile, capabilities, featured work, public GitHub presence, verified YouTube channel, personal interests, and professional experience
+- `index.html` — personal narrative, engineering leadership, selected engineering outcomes, maker projects, personal interests, credentials and external channels
 - `issf-trainer/index.html` — independent product landing page. **ISSF Trainer's repository is private and must not be linked or exposed.**
 - `assets/css/site.css` — shared design system and all page styles
 - `assets/js/site.js` — accessible mobile navigation, scroll highlights, and reduced-motion-aware reveals
@@ -45,3 +45,11 @@ The homepage links to the verified channel at `https://www.youtube.com/@DannyLuu
 - Keep current employer and clients anonymous, while showcasing job title, verified professional achievements, and engineering interests. Avoid internal systems, home address, and private family information.
 - Respect accessibility, keyboard navigation, contrast, responsive layout, reduced motion, and image aspect ratios.
 - Avoid presenting placeholder content as finished work.
+
+## Project photography
+
+The homepage contains explicit media integration markers for approved photographs. Add optimized WebP files with intrinsic width/height, descriptive alt text and lazy loading. Use the shared `project-media` and `media-pair` classes. Prioritize Ottawa Foos badges, the cropped smart-mirror information display, fabrication setup and keychains. Keep the existing hero portrait unless an alternate is explicitly selected. Do not publish original EXIF, private home/family imagery, or unreviewed shared photo links. The supplied media pack is separate from this branch until the binary assets are transferred; no missing-image URLs are committed.
+
+## Editorial organization
+
+The About section covers career origins; Engineering covers present-day decision-making and mentorship; Impact presents three anonymized outcomes with individual/team distinction; Projects presents actual independent/community work; Beyond work describes selected personal interests. Do not duplicate these stories in the toolkit or external-channel sections. Keep the product landing page independent and accurate about development status.
