@@ -570,3 +570,42 @@ h2 { line-height:1.04; }
 @media (max-width:36rem) {
  .impact-grid { grid-template-columns:1fr; }
 }
+
+/* Editorial content refinement: measured outcomes, projects and personal stories. */
+.case-grid,.personal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(1rem,2vw,1.5rem); }
+.case-study { position:relative; z-index:1; padding:clamp(1.2rem,2.6vw,2rem); background:var(--paper-2); border-top:.2rem solid var(--accent-deep); }
+.case-metric { font-size:clamp(2.15rem,4vw,3.55rem); font-weight:800; letter-spacing:-.06em; line-height:1.05; color:var(--accent-deep); margin-bottom:1.4rem; overflow-wrap:anywhere; }
+.case-metric span { display:block; font-size:.62em; letter-spacing:-.035em; }
+.case-study h3,.personal-story h3 { line-height:1.15; }
+.case-study p:last-child,.personal-story p { color:var(--ink-soft); margin-bottom:0; }
+.personal-section { background:var(--soft-surface); }
+.personal-story { border-top:1px solid var(--ink); padding-top:1.5rem; min-width:0; }
+.personal-story .link-inline { display:inline-block; margin-top:1rem; }
+.expertise-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem 2rem; }
+.expertise-grid > div { border-top:1px solid var(--line); padding-top:1rem; }
+.expertise-grid h3 { font-size:1.3rem; line-height:1.15; }
+.expertise-grid p { color:var(--ink-soft); }
+.contact .channel-card { background:#2b2427; color:#fff; border-color:rgba(255,255,255,.22); }
+.contact .channel-card p { color:#e9dfe1; }
+.contact .channel-card a { color:#fff; }
+.contact h2 { max-width:16ch; font-size:clamp(2.7rem,6vw,5rem); }
+.tile.architect,.tile.coach,.tile.product,.tile.make { grid-column:span 6; min-height:16rem; }
+.tile h3 { max-width:20ch; line-height:1.12; margin-right:1.6rem; }
+.tile p { position:relative; z-index:1; max-width:48ch; }
+.tile-glyph { pointer-events:none; }
+.project-media { margin:1.2rem 0; }
+.project-media img { width:100%; height:auto; border-radius:.75rem; }
+.project-media figcaption { color:var(--ink-soft); font-size:.85rem; line-height:1.4; margin-top:.5rem; }
+.media-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; align-items:start; }
+.media-pair .project-media { margin:1rem 0; }
+@media (max-width:48rem) {
+  .case-grid,.personal-grid,.expertise-grid { grid-template-columns:1fr; }
+  .tile.architect,.tile.coach,.tile.product,.tile.make { grid-column:1; min-height:0; padding-bottom:2rem; }
+  .hero-title { font-size:clamp(3.2rem,13vw,5.5rem); }
+  .section { padding-block:clamp(3.5rem,9vw,5rem); }
+}
+@media (max-width:28rem) { .media-pair { grid-template-columns:1fr; } }
+@media (prefers-reduced-motion:reduce) {
+  .role-track { width:100%; flex-wrap:wrap; justify-content:center; animation:none; }
+  .role-track span[aria-hidden="true"] { display:none; }
+}
