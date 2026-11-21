@@ -48,7 +48,7 @@ The homepage links to the verified channel at `https://www.youtube.com/@DannyLuu
 
 ## Project photography
 
-The homepage contains explicit media integration markers for approved photographs. Add optimized WebP files with intrinsic width/height, descriptive alt text and lazy loading. Use the shared `project-media` and `media-pair` classes. Prioritize Ottawa Foos badges, the cropped smart-mirror information display, fabrication setup and keychains. Keep the existing hero portrait unless an alternate is explicitly selected. Do not publish original EXIF, private home/family imagery, or unreviewed shared photo links. The supplied media pack is separate from this branch until the binary assets are transferred; no missing-image URLs are committed.
+Five optimized WebP photographs are committed under `assets/images/projects/`: Ottawa Foos anniversary badges, the privacy-cropped smart-mirror display, Prusa and Bambu Lab H2C fabrication setups, and foosball keychains. The homepage uses the shared `project-media` and `media-pair` classes with intrinsic dimensions, descriptive alt text and lazy loading. The existing hero portrait is unchanged. Additional supplied photographs remain optional; unfilled media markers are comments only and do not create broken image requests. Do not publish unreviewed home/family images, original EXIF, or unapproved shared photo links.
 
 ## Editorial organization
 
