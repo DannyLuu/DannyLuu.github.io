@@ -6,7 +6,7 @@ A lightweight, accessible personal portfolio and product hub built with static H
 
 ## Pages
 
-- `index.html` — personal profile, capabilities, featured work, public GitHub presence, video channel placeholder, and professional experience
+- `index.html` — personal profile, capabilities, featured work, public GitHub presence, verified YouTube channel, personal interests, and professional experience
 - `issf-trainer/index.html` — independent product landing page. **ISSF Trainer's repository is private and must not be linked or exposed.**
 - `assets/css/site.css` — shared design system and all page styles
 - `assets/js/site.js` — accessible mobile navigation, scroll highlights, and reduced-motion-aware reveals
@@ -32,16 +32,16 @@ No new framework or build tooling is required. If the number of projects becomes
 
 ## Updating visual style
 
-Change the CSS custom properties in `:root` and the refined identity rules at the bottom of `assets/css/site.css`. Keep the palette restrained and avoid reintroducing many independent accent colours. Use naturally sized, undistorted images, subtle animations, and meaningful visual hierarchy.
+Change the CSS custom properties in `:root` and the monochrome/deep-red design rules in `assets/css/site.css`. Keep the palette primarily black and white, with limited oxblood-red accents. Avoid introducing multiple competing accent colours. Use naturally sized, undistorted images, subtle animations, and meaningful visual hierarchy.
 
 ## YouTube content
 
-The homepage includes a dedicated channel card but does not invent a channel URL or feature videos that have not been verified. When the correct channel URL and videos are available, replace the placeholder with a real external link and selectively add thumbnail cards. Use lightweight image links rather than autoplaying external embeds.
+The homepage links to the verified channel at `https://www.youtube.com/@DannyLuu`. It accurately describes past gymnastics/tricking, personal-finance and travel content, as well as the user's current hiatus and interest in future maker and financial-literacy videos. Add selected videos with lightweight preview thumbnails once approved; do not auto-play external embeds.
 
 ## Content and privacy principles
 
 - Position ISSF Trainer as an athlete-facing sporting product, not as an open-source repository or code demo.
 - Do not publish private source links, unpublished screenshots, product release dates, or false download buttons.
-- Share professional scope without exposing clients, internal systems, home address, or personal family information.
+- Keep current employer and clients anonymous, while showcasing job title, verified professional achievements, and engineering interests. Avoid internal systems, home address, and private family information.
 - Respect accessibility, keyboard navigation, contrast, responsive layout, reduced motion, and image aspect ratios.
 - Avoid presenting placeholder content as finished work.
