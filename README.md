@@ -6,7 +6,7 @@ A lightweight, accessible personal portfolio and product hub built with static H
 
 ## Pages
 
-- `index.html` — personal narrative, engineering leadership, selected engineering outcomes, maker projects, personal interests, credentials and external channels
+- `index.html` — personal narrative, engineering leadership, selected engineering outcomes, maker projects, optional side-project services, personal interests, credentials and external channels
 - `issf-trainer/index.html` — independent product landing page. **ISSF Trainer's repository is private and must not be linked or exposed.**
 - `assets/css/site.css` — shared design system and all page styles
 - `assets/js/site.js` — accessible mobile navigation, scroll highlights, and reduced-motion-aware reveals
@@ -65,3 +65,12 @@ Navigation should fit smaller laptop widths, remain keyboard-accessible (includi
 Write in Danny's voice: conversational, curious, grounded and professional without sounding corporate. Prefer first-person accounts of specific things he has done or enjoyed over broad claims about personality. Use familiar wording (“tinkering with electronics,” “playing foosball,” “3D modelling and printing”) instead of inflated descriptions or keyword-heavy lists. Each homepage section should add information rather than reintroduce the same themes.
 
 Keep the distinction between current activities and past interests: fitness and staying healthy are current priorities; gymnastics/tricking are part of the past; video production is something he may return to, not an active publishing schedule. His engineering role and mentoring belong in Engineering, not repeated throughout the hero. Avoid inferred achievements or product promises. The public hero location is Canada only; do not add a more specific home location.
+
+## Services and availability
+
+The homepage includes **Ways I can help** as an invitation to discuss small side projects, not as a full-time consulting agency or a guarantee of availability. Services include custom 3D modelling, 3D printing, appropriately scoped software work, basic home/electronics troubleshooting when feasible, and general personal-finance learning conversations. Keep the language conditional on project suitability, schedule, and skill.
+
+- Do not claim licensed trade, electrical, structural, or safety-critical repair qualifications. Refer such tasks to qualified professionals.
+- Personal finance content is educational only. Danny is **not a financial advisor**; do not offer individualized investment recommendations, portfolio management, or imply professional accreditation.
+- Do not invent prices, lead times, client testimonials, a booking system, or a home location. The call to action links to his existing public LinkedIn profile.
+- Keep the services section after tangible projects, so examples of existing work precede offers to collaborate.
