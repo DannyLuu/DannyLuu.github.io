@@ -339,7 +339,7 @@
       .project { grid-template-columns: 4rem .85fr 1.15fr; }
     }
 
-    @media (max-width: 56rem) {
+    @media (max-width: 66rem) {
   .nav-toggle { display:block; cursor:pointer; }
   .site-nav {
     display:none; position:absolute; top:4.9rem; right:1rem; left:1rem;
@@ -600,3 +600,47 @@ h2 { line-height:1.04; }
   .section { padding-block:clamp(3.5rem,9vw,5rem); }
 }
 @media (max-width:28rem) { .media-pair { grid-template-columns:1fr; } }
+
+
+/* Optional side-project services: useful, approachable and not a full-time agency. */
+.services { background:#f7f3f3; }
+.services .section-head { max-width:61rem; }
+.services .section-head h2 { max-width:16ch; }
+.services-grid { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:1rem; }
+.service-card {
+  grid-column:span 2; min-width:0; padding:clamp(1.4rem,2.8vw,2rem);
+  border:1px solid rgba(27,25,26,.13); border-top:.18rem solid var(--accent-deep);
+  border-radius:1rem; background:var(--paper-2);
+}
+.service-card:nth-child(4),.service-card:nth-child(5) { grid-column:span 3; background:#f0e8e9; }
+.service-card:first-child {
+  background:linear-gradient(140deg,#332027,#542c37); color:#fff;
+  border-color:#542c37;
+}
+.service-index { display:block; color:var(--accent-deep); font-size:.75rem; font-weight:800; letter-spacing:.12em; }
+.service-card:first-child .service-index { color:#efb6c1; }
+.service-card h3 { margin:1.6rem 0 .8rem; font-size:clamp(1.5rem,2.1vw,1.95rem); line-height:1.13; }
+.service-card p { margin:0; color:var(--ink-soft); line-height:1.62; }
+.service-card:first-child p { color:#f0dfe3; }
+.services-invite {
+  display:flex; align-items:center; justify-content:space-between; gap:clamp(1.5rem,3vw,2.5rem);
+  margin-top:1.25rem; padding:clamp(1.5rem,3.3vw,2.4rem);
+  border-radius:1rem; background:#221e20; color:#fff;
+}
+.services-invite h3 { margin:0 0 .6rem; font-size:clamp(1.55rem,2.4vw,2.15rem); }
+.services-invite p { max-width:58ch; margin:0; color:#e9dfe1; }
+.services-invite .button { flex-shrink:0; background:#f5e9ec; color:#221e20; border-color:#f5e9ec; }
+.services-invite .button:focus-visible { outline-color:#fff; }
+@media (max-width:62rem) {
+  .service-card,.service-card:nth-child(4),.service-card:nth-child(5) { grid-column:span 3; }
+  .service-card:last-child { grid-column:span 6; }
+}
+@media (max-width:48rem) {
+  .services-grid { grid-template-columns:1fr; }
+  .service-card,.service-card:nth-child(4),.service-card:nth-child(5),.service-card:last-child { grid-column:1; }
+  .services-invite { flex-direction:column; align-items:stretch; }
+  .services-invite .button { align-self:flex-start; }
+}
+@media (max-width:28rem) {
+  .services-invite .button { width:100%; }
+}
