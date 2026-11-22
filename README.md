@@ -53,3 +53,9 @@ Five optimized WebP photographs are committed under `assets/images/projects/`: O
 ## Editorial organization
 
 The About section covers career origins; Engineering covers present-day decision-making and mentorship; Impact presents three anonymized outcomes with individual/team distinction; Projects presents actual independent/community work; Beyond work describes selected personal interests. Do not duplicate these stories in the toolkit or external-channel sections. Keep the product landing page independent and accurate about development status.
+
+## Editorial voice
+
+Write in Danny's voice: conversational, curious, grounded and professional without sounding corporate. Prefer first-person accounts of specific things he has done or enjoyed over broad claims about personality. Use familiar wording (“tinkering with electronics,” “playing foosball,” “3D modelling and printing”) instead of inflated descriptions or keyword-heavy lists. Each homepage section should add information rather than reintroduce the same themes.
+
+Keep the distinction between current activities and past interests: fitness and staying healthy are current priorities; gymnastics/tricking are part of the past; video production is something he may return to, not an active publishing schedule. His engineering role and mentoring belong in Engineering, not repeated throughout the hero. Avoid inferred achievements or product promises. The public hero location is Canada only; do not add a more specific home location.
