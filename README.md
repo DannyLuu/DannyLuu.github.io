@@ -52,7 +52,7 @@ Five optimized WebP photographs are committed under `assets/images/projects/`: O
 
 ## Editorial organization
 
-The About section covers career origins; Engineering covers present-day decision-making and mentorship; Impact presents three anonymized outcomes with individual/team distinction; Projects presents actual independent/community work; Beyond work describes selected personal interests. Do not duplicate these stories in the toolkit or external-channel sections. Keep the product landing page independent and accurate about development status.
+The homepage follows a project-first story: About covers career origins, Projects shows independent and community work, Services invites appropriately scoped side projects, and Engineering explains decision-making, mentoring and three anonymized measurable outcomes (including team attribution). Beyond Work describes selected personal interests. Professional outcomes no longer get a separate top-level section. Keep them in Engineering, preserve the `#experience` deep-link anchor, and do not duplicate those stories in the toolkit or external-channel sections. Keep the product landing page independent and accurate about development status. Do not showcase Maple Exchange until the owner explicitly approves its public positioning.
 
 ## Hero and interface direction
 
