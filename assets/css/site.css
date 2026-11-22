@@ -566,6 +566,32 @@ h2 { line-height:1.04; }
  .impact-grid { grid-template-columns:1fr; }
 }
 
+
+/* Projects lead the personal story; professional results live inside Engineering. */
+.work { background:#f7f4f3; border-top:1px solid var(--line); }
+.engineering-highlights {
+  margin-top:clamp(3rem,6vw,5.25rem);
+  padding-top:clamp(2rem,4vw,3rem);
+  border-top:1px solid rgba(255,255,255,.22);
+  scroll-margin-top:7rem;
+}
+.engineering-highlights-head { margin-bottom:1.5rem; max-width:53rem; }
+.engineering-highlights-head h3 {
+  max-width:none; font-size:clamp(1.9rem,3vw,2.85rem); line-height:1.13; letter-spacing:-.045em;
+  margin:0 0 .8rem;
+}
+.engineering-highlights-head p:last-child { max-width:58ch; margin:0; color:rgba(255,255,255,.75); }
+.engineering-highlights .case-study {
+  min-width:0; padding:clamp(1.2rem,2.3vw,1.8rem);
+  border-radius:.85rem; background:#fbf8f8; border-top:.2rem solid #bd576a;
+}
+.engineering-highlights .case-metric { font-size:clamp(1.9rem,3.1vw,2.75rem); margin-bottom:1.1rem; }
+.engineering-highlights .case-study h4 {
+  color:var(--ink); margin:0 0 .65rem; font-size:clamp(1.18rem,1.8vw,1.38rem);
+  line-height:1.2; letter-spacing:-.025em;
+}
+.engineering-highlights .case-study p:last-child { color:var(--ink-soft); line-height:1.55; font-size:.96rem; }
+
 /* Editorial content refinement: measured outcomes, projects and personal stories. */
 .case-grid,.personal-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(1rem,2vw,1.5rem); }
 .case-study { position:relative; z-index:1; padding:clamp(1.2rem,2.6vw,2rem); background:var(--paper-2); border-top:.2rem solid var(--accent-deep); }
