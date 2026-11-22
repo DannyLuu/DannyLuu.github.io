@@ -30,7 +30,7 @@
       document.addEventListener('pointerdown', event => {
         if (nav.dataset.open === 'true' && !header.contains(event.target)) closeNav();
       });
-      const desktopNav = window.matchMedia('(min-width: 56.01rem)');
+      const desktopNav = window.matchMedia('(min-width: 66.01rem)');
       desktopNav.addEventListener('change', event => {
         if (event.matches) closeNav();
       });
