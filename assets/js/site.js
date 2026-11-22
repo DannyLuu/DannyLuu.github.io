@@ -20,6 +20,21 @@
       });
       links.forEach(link => link.addEventListener('click', closeNav));
 
+      // Keep the mobile menu easy to dismiss without reaching for the toggle.
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && nav.dataset.open === 'true') {
+          closeNav();
+          toggle.focus();
+        }
+      });
+      document.addEventListener('pointerdown', event => {
+        if (nav.dataset.open === 'true' && !header.contains(event.target)) closeNav();
+      });
+      const desktopNav = window.matchMedia('(min-width: 56.01rem)');
+      desktopNav.addEventListener('change', event => {
+        if (event.matches) closeNav();
+      });
+
       const syncHeader = () => { header.dataset.scrolled = String(window.scrollY > 24); };
       syncHeader();
       window.addEventListener('scroll', syncHeader, { passive: true });
