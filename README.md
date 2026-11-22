@@ -54,6 +54,12 @@ Five optimized WebP photographs are committed under `assets/images/projects/`: O
 
 The About section covers career origins; Engineering covers present-day decision-making and mentorship; Impact presents three anonymized outcomes with individual/team distinction; Projects presents actual independent/community work; Beyond work describes selected personal interests. Do not duplicate these stories in the toolkit or external-channel sections. Keep the product landing page independent and accurate about development status.
 
+## Hero and interface direction
+
+The homepage introduces Danny as **Architect. Maker. Explorer.** Keep these three words consistent in the visible heading, document title, and social sharing metadata. Preserve the approved first-person introduction. Lead with the headline and actions on mobile before the headshot; the portrait's intrinsic dimensions must remain intact. Use the deep oxblood accent selectively for the third word and a little contrast in the engineering bento cards rather than adding decorative clutter.
+
+Navigation should fit smaller laptop widths, remain keyboard-accessible (including Escape), and keep the same section order across the homepage and ISSF Trainer page. Avoid hover effects that shift non-clickable content. Keep key actions large enough to tap and respect reduced-motion settings.
+
 ## Editorial voice
 
 Write in Danny's voice: conversational, curious, grounded and professional without sounding corporate. Prefer first-person accounts of specific things he has done or enjoyed over broad claims about personality. Use familiar wording (“tinkering with electronics,” “playing foosball,” “3D modelling and printing”) instead of inflated descriptions or keyword-heavy lists. Each homepage section should add information rather than reintroduce the same themes.
