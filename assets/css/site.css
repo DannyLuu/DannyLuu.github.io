@@ -516,8 +516,15 @@ button { font: inherit; }
 
 .club-photos { grid-template-columns: 1.77fr 1fr; }
 
-.maker-aside { margin-top: 2rem; color: var(--muted); }
-.maker-aside a { font-weight: 650; }
+.maker-aside {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  padding-top: 1.35rem;
+  border-top: 1px solid var(--ink);
+  gap: .65rem 2.5rem;
+}
+
+.maker-aside p { color: var(--muted); }
+.maker-aside a { display: inline-block; margin-top: .65rem; font-weight: 650; }
 
 .approach-list { border-top: 1px solid var(--ink); }
 
