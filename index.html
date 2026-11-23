@@ -1,242 +1,274 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Danny Luu is a Technical Architect based in Canada who enjoys solving difficult problems, building apps, tinkering with electronics and 3D modelling.">
+  <meta name="description" content="Danny Luu is a Technical Architect and Software Architect working in enterprise commerce, backend engineering, systems integration, and modernization.">
   <meta name="author" content="Danny Luu">
-  <meta name="theme-color" content="#1a191a">
-  <script>document.documentElement.classList.add('js')</script>
-
+  <meta name="theme-color" content="#f8f7f4">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Danny Luu — Architect. Maker. Explorer.">
-  <meta property="og:description" content="Technical architecture, independent projects and a curiosity for figuring out how things work.">
+  <meta property="og:title" content="Danny Luu | Technical &amp; Software Architect">
+  <meta property="og:description" content="Enterprise software architecture, selected engineering work, and independent projects by Danny Luu.">
   <meta property="og:url" content="https://www.dannyluu.com/">
   <meta property="og:image" content="https://www.dannyluu.com/assets/images/headshot.png">
-
-  <title>Danny Luu — Architect. Maker. Explorer.</title>
+  <meta property="og:image:width" content="854">
+  <meta property="og:image:height" content="893">
+  <meta property="og:image:alt" content="Portrait of Danny Luu">
+  <meta name="twitter:card" content="summary">
+  <title>Danny Luu | Technical &amp; Software Architect</title>
   <link rel="canonical" href="https://www.dannyluu.com/">
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
-
+  <link rel="preload" href="assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/site.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Danny Luu","url":"https://www.dannyluu.com/","jobTitle":"Technical Architect","sameAs":["https://github.com/DannyLuu","https://www.linkedin.com/in/luudanny/","https://www.youtube.com/@DannyLuu"]}</script>
+  <script src="assets/js/site.js" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Danny Luu",
+      "url": "https://www.dannyluu.com/",
+      "image": "https://www.dannyluu.com/assets/images/headshot.png",
+      "jobTitle": ["Technical Architect", "Software Architect"],
+      "sameAs": [
+        "https://www.linkedin.com/in/luudanny/",
+        "https://github.com/DannyLuu",
+        "https://www.youtube.com/@DannyLuu"
+      ]
+    }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="#home" aria-label="Danny Luu, home"><span class="brand-mark">DL</span><span>Danny Luu</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home">Danny Luu<span aria-hidden="true">.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Projects</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#capabilities">Engineering</a></li>
-          <li><a href="#personal">Beyond work</a></li>
-          <li><a href="#contact">Connect</a></li>
+          <li><a href="#capabilities">Expertise</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">Story</a></li>
+          <li><a href="#personal">Beyond Software</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a class="nav-contact" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-title">
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title" tabindex="-1">
       <div class="shell hero-grid">
-        <div class="hero-copy" data-reveal>
-          <p class="kicker">Based in Canada</p>
-          <h1 class="hero-title" id="hero-title">
-            <span class="line">Architect.</span>
-            <span class="line outline">Maker.</span>
-            <span class="line accent">Explorer.</span>
-          </h1>
-          <p class="lede">I’m a Technical Architect, and I always get excited about solving difficult problems. I’ve always been curious and love trying new things, whether it’s building apps, tinkering with electronics, or 3D modelling and printing. Outside of work, I enjoy playing foosball, staying active, and exploring whatever happens to catch my interest.</p>
-          <div class="hero-actions">
-            <a class="button" href="#about">Get to know me <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="button light" href="#work">See my projects <span class="arrow" aria-hidden="true">↗</span></a>
+        <div>
+          <p class="kicker">Danny Luu <span class="kicker-separator" aria-hidden="true">/</span> Canada</p>
+          <h1 id="hero-title">Technical &amp; <em>Software Architect</em></h1>
+          <p class="hero-lede">I design enterprise software, connect systems, and investigate the production problems that fall between them. My work spans SAP Commerce, backend engineering, and application modernization.</p>
+          <div class="actions">
+            <a class="button" href="#work">Explore featured work</a>
+            <a class="button button-outline" href="#contact">Get in touch</a>
           </div>
         </div>
-
-        <div class="portrait-stage" data-reveal>
-          <div class="portrait-frame">
-            <img src="assets/images/headshot.png" alt="Portrait of Danny Luu" width="854" height="893" fetchpriority="high" decoding="async">
-          </div>
-          
+        <div class="portrait">
+          <img src="assets/images/headshot-854.webp"
+               srcset="assets/images/headshot-480.webp 480w, assets/images/headshot-854.webp 854w"
+               sizes="(max-width: 46rem) min(82vw, 24rem), (max-width: 68rem) 36vw, 25rem"
+               width="854" height="893" alt="Portrait of Danny Luu" fetchpriority="high">
         </div>
       </div>
     </section>
 
-    <section class="section intro" id="about" aria-labelledby="about-title">
-      <div class="shell intro-grid">
-        <div class="section-head" data-reveal>
+    <section class="section expertise" id="capabilities" aria-labelledby="capabilities-title" tabindex="-1">
+      <div class="shell">
+        <div class="split section-intro">
+          <div>
+            <p class="kicker">Expertise</p>
+            <h2 id="capabilities-title">Where I can help.</h2>
+          </div>
+          <p class="section-lede" id="services" tabindex="-1"><span id="services-title">I can help</span> when a commerce platform needs to change, an integration keeps failing, or a team needs a second opinion before committing to a design.</p>
+        </div>
+        <div class="capability-list">
+          <article>
+            <h3>Software &amp; solution architecture</h3>
+            <p>Define system boundaries, decide what belongs where, and turn business requirements into a design the team can deliver and operate.</p>
+          </article>
+          <article>
+            <h3>Enterprise applications &amp; integration</h3>
+            <p>Build and connect SAP Commerce applications, backend services, and APIs. Work through how data moves and what happens when a dependency fails.</p>
+          </article>
+          <article>
+            <h3>Production troubleshooting &amp; modernization</h3>
+            <p>Trace recurring failures, latency, and data issues across systems. Work out which parts to change first and how to move an existing application forward in stages.</p>
+          </article>
+          <article>
+            <h3>Engineering guidance</h3>
+            <p>Review designs and code, help teams weigh trade-offs, and mentor developers as they take on more of the technical decisions.</p>
+          </article>
+        </div>
+
+        <div class="results" id="experience" tabindex="-1">
+          <h3 id="experience-title">Selected engineering outcomes</h3>
+          <div class="result-grid">
+            <article>
+              <p class="result-metric">20 min <small>to milliseconds</small></p>
+              <h4>Page load time</h4>
+              <p>I traced a page taking roughly 20 minutes to load to oversized data transfer objects. Reworking those objects brought the load time down to milliseconds.</p>
+            </article>
+            <article>
+              <p class="result-metric">30% to 80%+</p>
+              <h4>JUnit coverage</h4>
+              <p>My team raised test coverage from around 30% to more than 80%.</p>
+            </article>
+            <article>
+              <p class="result-metric">500+ stores</p>
+              <h4>Retail data integration</h4>
+              <p>I helped automate digital flyer data for a retail platform that served more than 500 stores.</p>
+            </article>
+          </div>
+        </div>
+        <p class="credentials" id="toolkit-title" tabindex="-1">Bachelor of Computer Science, Carleton University <span aria-hidden="true">/</span> SAP Commerce Cloud Developer (Professional) and SAP Commerce Business Analyst (Associate)</p>
+      </div>
+    </section>
+
+    <section class="section dark work" id="work" aria-labelledby="work-title" tabindex="-1">
+      <div class="shell">
+        <div class="section-intro">
+          <p class="kicker">Featured work</p>
+          <h2 id="work-title"><span id="featured-title">ISSF Trainer</span></h2>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <p class="feature-lede">A Flutter project for athletes in Olympic-style precision pistol sport.</p>
+            <p>I started building it after noticing how much information I had to piece together across competition references, score tools, and session notes. The product challenge is making each of those tasks easy to find and use on a phone.</p>
+            <p class="status"><span aria-hidden="true"></span> Independent project in development</p>
+            <a class="button button-inverse" href="issf-trainer/">Read the case study</a>
+          </div>
+          <div class="project-cover" aria-hidden="true">
+            <div class="cover-orbits"></div>
+            <div class="cover-card">
+              <span class="cover-app">ISSF Trainer</span>
+              <span class="cover-rule"></span>
+              <span class="cover-row">Reference</span>
+              <span class="cover-row">Scoring</span>
+              <span class="cover-row">Session history</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="about" aria-labelledby="about-title" tabindex="-1">
+      <div class="shell split">
+        <div>
           <p class="kicker">My story</p>
           <h2 id="about-title">It started with a screwdriver.</h2>
         </div>
-        <div data-reveal>
-          <p class="big-note">Apparently, I had a habit of taking my toys apart as a kid just to figure out how they worked. Putting them back together? That was another story.</p>
-          <p class="lede">I grew up when the internet still felt like a whole new world. I remember exploring sites like Neopets, using Pentium computers and thinking Windows XP was the best thing ever. I built my own computer, too, and loved learning how all the parts worked together. Video games first pulled me in, but before long I was building websites and running my own game server. It didn't have many players, but I didn't mind. Half the fun was learning Linux, figuring out networking and getting the whole thing running.</p>
-          <p class="lede">After studying Computer Science, I started my career in tech support, digging through logs, debugging issues and tracing problems back to their source. I liked figuring out what went wrong, but I wanted to build the software, too. It took a couple of years to get that chance, and I kept working toward it.</p>
-          <p class="lede">Once I moved into development, I kept challenging myself through side projects, books and every new role I took on. Eventually, I became a Technical Architect. I'm proud of the trust I've earned and the work it took to get here.</p>
-          <p class="lede">That urge to figure things out never really went away. These days, if a project calls for a tool I don't have or a skill I haven't learned, I'd rather learn how to do it myself. I've collected quite a few tools that way—and I'm a lot better at putting things back together now.</p>
-          <!-- media:about-portrait -->
+        <div class="story-copy">
+          <p class="section-lede">Apparently, I took my toys apart as a kid to see how they worked. Putting them back together was another story.</p>
+          <p>Games got me into computers. I built my own PC, taught myself HTML, CSS, and JavaScript, and hosted a Ragnarok Online server. It didn’t have many players, but half the fun was learning Linux, sorting out the networking, and getting the thing to stay online.</p>
+          <p>After studying Computer Science, I started in technical support. I liked digging through logs and tracing a problem back to its source. I also wanted to be the person who could change the software that caused it. I kept learning alongside the day job until I got my chance to move into development.</p>
+          <p>That eventually led me to technical architecture. I’m proud of the trust I’ve earned along the way, especially when a developer I’ve worked with starts making decisions they once would have brought to me.</p>
         </div>
       </div>
     </section>
 
-    <section class="section work" id="work" aria-labelledby="work-title">
+    <section class="section makers" id="personal" aria-labelledby="personal-title" tabindex="-1">
       <div class="shell">
-        <div class="section-head" data-reveal><p class="kicker">Personal projects</p><h2 id="work-title">Projects I’m proud of.</h2><p class="lede">Some projects start with a problem I want to solve. Others begin because I have an idea and want to see if I can make it work.</p></div>
-        <article class="featured-project" data-reveal aria-labelledby="featured-title">
-          <div><p class="kicker">Independent software · In development</p><h3 id="featured-title">ISSF Trainer</h3><p class="lede">I’m building ISSF Trainer for people practising Olympic-style pistol events. I wanted training exercises, competition timing, scoring and rules in one place instead of having to piece everything together.</p><p class="product-brief">It’s still in development, and I’m refining it as I learn more about what makes a training tool genuinely useful.</p><p class="featured-actions"><a class="button" href="issf-trainer/">Explore the product <span class="arrow" aria-hidden="true">↗</span></a></p></div>
-          <div class="product-visual" role="img" aria-label="Abstract concentric rings representing the sport"><div class="ring-mark" aria-hidden="true"></div><span class="visual-caption">ISSF Trainer</span></div>
-        </article>
-        <div class="project-list">
-          <article class="project" data-reveal id="ottawa-foos"><div class="project-index">01</div><div><span class="status">Community project</span><h3>Ottawa Foos anniversary badges</h3></div><div class="project-copy"><p>I made these 3D-printed badges for the foosball tables at Ottawa Foos, the club I play with. They feature the club’s logo and celebrate its 25th anniversary.</p><p>It was a fun way to put my 3D printing hobby to use for a club I’m part of.</p><figure class="project-media"><img src="assets/images/projects/ottawa-foos-badges.webp" width="1200" height="900" alt="Five yellow, black and white Ottawa Foos anniversary badges on a foosball table" loading="lazy" decoding="async"><figcaption>3D-printed club badges commemorating 25 years of Ottawa Foos.</figcaption></figure><ul class="tag-list"><li>3D printing</li><li>Community</li><li>Fabrication</li></ul></div></article>
-          <article class="project" data-reveal id="smart-mirror"><div class="project-index">02</div><div><span class="status">Electronics experiment</span><h3>Motion-aware smart mirror</h3></div><div class="project-copy"><p>I built a smart mirror to show things like the time, calendar and weather. Getting the screen to respond to motion was trickier than I expected. HDMI-CEC wasn’t working with the display, so I tried a motion sensor and infrared control instead. Getting the IR signal right turned into its own little project.</p><figure class="project-media"><img src="assets/images/projects/smart-mirror-display.webp" width="1000" height="441" alt="Smart mirror displaying the date, calendar and weather forecast" loading="lazy" decoding="async"><figcaption>The smart mirror display.</figcaption></figure><ul class="tag-list"><li>Motion sensor</li><li>Infrared</li><li>Hardware debugging</li></ul></div></article>
-          <article class="project" data-reveal id="fabrication"><div class="project-index">03</div><div><span class="status">Ongoing experiments</span><h3>3D modelling &amp; printing</h3></div><div class="project-copy"><p>I started with a Prusa printer and now use a Bambu Lab H2C. I enjoy the whole process, from modelling something on screen to seeing how it prints and tweaking the design when it doesn’t turn out quite right. Some prints are practical; others are just for fun, like these foosball keychains.</p><div class="media-pair"><figure class="project-media"><img src="assets/images/projects/prusa-workbench.webp" width="776" height="800" alt="Original Prusa 3D printer on a workbench" loading="lazy" decoding="async"><figcaption>My earlier Prusa setup.</figcaption></figure><figure class="project-media"><img src="assets/images/projects/bambu-h2c.webp" width="677" height="900" alt="Bambu Lab H2C with two filament systems" loading="lazy" decoding="async"><figcaption>My current fabrication setup.</figcaption></figure></div><ul class="tag-list"><li>CAD</li><li>3D printing</li><li>Prototyping</li></ul></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section services" id="services" aria-labelledby="services-title">
-      <div class="shell">
-        <div class="section-head" data-reveal>
-          <p class="kicker">Ways I can help</p>
-          <h2 id="services-title">Have something in mind?</h2>
-          <p class="lede">I have a full-time job, but I'm open to smaller side projects when the idea, scope and timing make sense. Whether you're trying to make something or figure something out, here are a few ways I might be able to help.</p>
-        </div>
-        <div class="services-grid">
-          <article class="service-card" data-reveal>
-            <span class="service-index">01 / DESIGN</span>
-            <h3>3D modelling &amp; design</h3>
-            <p>Have a part, accessory or custom idea in mind? I can help turn a sketch, measurements or a rough concept into a 3D model you can use or print.</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <span class="service-index">02 / PRINT</span>
-            <h3>3D printing</h3>
-            <p>Don't have a printer at home? I can print suitable models or help you work through a custom print, from choosing a material to making sure the design fits its purpose.</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <span class="service-index">03 / SOFTWARE</span>
-            <h3>Software consulting &amp; development</h3>
-            <p>Need a second opinion on a technical problem or help bringing an idea to life? I can help with software architecture, code reviews, integrations and troubleshooting. I'm also open to building smaller apps, websites and automations when the scope and timing fit.</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <span class="service-index">04 / FIX</span>
-            <h3>Small fixes &amp; electronics</h3>
-            <p>I enjoy figuring out why things stop working. If you've got a small household repair or an electronics problem, I may be able to troubleshoot it or help with a fix. I'll be upfront if it's outside my skills or needs a licensed professional.</p>
-          </article>
-          <article class="service-card" data-reveal>
-            <span class="service-index">05 / SHARE</span>
-            <h3>Personal finance conversations</h3>
-            <p>I enjoy learning about saving, budgeting and investing, and I'm happy to talk through the basics or share useful resources. I'm not a financial advisor, and I don't provide personalized investment advice.</p>
-          </article>
-        </div>
-        <div class="services-invite" data-reveal>
+        <div class="split section-intro">
           <div>
-            <h3>Tell me what you're working on.</h3>
-            <p>A quick description, sketch or photo is a great place to start. I'll let you know if it's something I can help with around my full-time schedule.</p>
+            <p class="kicker">Beyond software</p>
+            <h2 id="personal-title">On the workbench.</h2>
           </div>
-          <a class="button" href="https://www.linkedin.com/in/luudanny/" target="_blank" rel="noopener noreferrer">Reach out on LinkedIn <span class="arrow" aria-hidden="true">↗</span></a>
+          <p class="section-lede">I like projects where the software meets something I can hold, fit into a case, or put to work around the house.</p>
+        </div>
+        <div class="maker-grid">
+          <article class="maker-feature">
+            <p class="kicker">Handheld electronics</p>
+            <h3>My Raspberry Pi Game Boy</h3>
+            <p>I built a Game Boy-style handheld around a Raspberry Pi Compute Module 3 and a Circuit Sword board. Putting a computer inside a handheld shell brought me back to what I liked about building my first PC, with a much smaller space to work in.</p>
+          </article>
+          <article class="maker-card" id="ottawa-foos" tabindex="-1">
+            <figure>
+              <div class="maker-photos club-photos">
+                <img src="assets/images/projects/ottawa-foos-badges.webp" width="1200" height="900" alt="Five yellow, black and white anniversary badges on a foosball table" loading="lazy" decoding="async">
+                <img src="assets/images/projects/foosball-keychains.webp" width="677" height="900" alt="Multicoloured miniature foosball player keychains" loading="lazy" decoding="async">
+              </div>
+              <figcaption>Club badges and foosball keychains.</figcaption>
+            </figure>
+            <h3>Ottawa Foos anniversary badges</h3>
+            <p>I play competitive foosball with Ottawa Foos. When the club turned 25, I made these badges for its tables.</p>
+          </article>
+          <article class="maker-card" id="smart-mirror" tabindex="-1">
+            <figure>
+              <img src="assets/images/projects/smart-mirror-display.webp" width="1000" height="441" alt="Smart mirror displaying the time and weather" loading="lazy" decoding="async">
+              <figcaption>The mirror displays information at a glance.</figcaption>
+            </figure>
+            <h3>Motion-aware smart mirror</h3>
+            <p>I built a mirror that shows the time, calendar, and weather. When HDMI-CEC couldn’t wake the display, I tried a motion sensor and infrared control instead. Getting the infrared signal right became a project of its own.</p>
+          </article>
+          <article class="maker-card" id="fabrication" tabindex="-1">
+            <div class="maker-photos">
+              <img src="assets/images/projects/prusa-workbench.webp" width="776" height="800" alt="Prusa 3D printer and tools on Danny’s workbench" loading="lazy" decoding="async">
+              <img src="assets/images/projects/bambu-h2c.webp" width="677" height="900" alt="Bambu Lab H2C enclosed 3D printer" loading="lazy" decoding="async">
+            </div>
+            <h3>3D modelling &amp; printing</h3>
+            <p>I use Fusion 360 to turn measurements and sketches into parts. I like the point where the first print reveals what I missed about the fit, material, or shape.</p>
+          </article>
+        </div>
+        <p class="maker-aside">I also enjoy strength training and making videos. <a href="https://www.youtube.com/shorts/0AFKd_9AN0o">Here’s a clip from my tricking days.</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="approach" aria-labelledby="approach-title" tabindex="-1">
+      <div class="shell split">
+        <div>
+          <p class="kicker">My approach</p>
+          <h2 id="approach-title">How I work.</h2>
+        </div>
+        <div class="approach-list">
+          <article>
+            <h3>Follow the evidence.</h3>
+            <p>For an unfamiliar production issue, I start with a concrete example and follow it through the logs, data, and dependencies. I want to be able to explain why the failure happened and how we can tell when it’s fixed.</p>
+          </article>
+          <article>
+            <h3>Write down the trade-offs.</h3>
+            <p>I compare options against how the system is deployed, what the team can support, and how much we can change safely. An incremental change can buy time to learn before committing to a larger redesign.</p>
+          </article>
+          <article>
+            <h3>Leave the reasoning with the team.</h3>
+            <p>I use design and code reviews to explain why a choice made sense and invite someone to challenge it. That shared context matters when the next developer has to extend the design or deal with it in production.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section capabilities" id="capabilities" aria-labelledby="capabilities-title">
-      <div class="shell">
-        <div class="section-head" data-reveal>
-          <p class="kicker">Engineering &amp; leadership</p>
-          <h2 id="capabilities-title">How I work.</h2>
-          <p class="lede">I spend a lot of time thinking about the decisions behind the code: what will work now, what might cause trouble later, and how to make things easier for the people working on it.</p>
+    <section class="section dark contact" id="contact" aria-labelledby="contact-title" tabindex="-1">
+      <div class="shell split contact-grid">
+        <div>
+          <p class="kicker">Get in touch</p>
+          <h2 id="contact-title">Tell me what you’re working on.</h2>
         </div>
-        <div class="bento">
-          <article class="tile architect" data-reveal><span class="tile-number">01</span><h3>Seeing the whole picture.</h3><p>When I’m designing something, I don’t stop at the application code. I think about how it connects to APIs, data, infrastructure and deployment—and whether the team will be able to maintain it without headaches later.</p><span class="tile-glyph" aria-hidden="true">⌘</span></article>
-          <article class="tile coach" data-reveal><span class="tile-number">02</span><h3>Helping developers grow.</h3><p>I enjoy being someone developers can bounce ideas off. When someone is stuck, I’d rather help them work through the problem than just hand over an answer. I want people to feel confident making decisions on their own.</p><span class="tile-glyph" aria-hidden="true">↗</span></article>
-          <article class="tile product" data-reveal><span class="tile-number">03</span><h3>Getting to the root of it.</h3><p>Some of my favourite work starts with a bug nobody can quite explain. I follow it wherever it leads—code, databases, integrations or servers—until I understand what’s really happening.</p><span class="tile-glyph" aria-hidden="true">□</span></article>
-          <article class="tile make" data-reveal><span class="tile-number">04</span><h3>Keeping things practical.</h3><p>I don’t think every problem needs a big redesign. Sometimes the better choice is a smaller change that’s easier to understand, deliver and maintain.</p><span class="tile-glyph" aria-hidden="true">◇</span></article>
-        </div>
-        <div class="engineering-highlights" id="experience" aria-labelledby="experience-title">
-          <div class="engineering-highlights-head" data-reveal>
-            <p class="kicker">In practice</p>
-            <h3 id="experience-title">A few problems I’ve helped solve.</h3>
-            <p>Most of my professional work happens behind the scenes, but here are three results I can share without naming clients.</p>
+        <div>
+          <p class="section-lede">If you’re weighing an architecture decision, dealing with a stubborn technical problem, or building something you’d like to collaborate on, I’d be glad to hear about it.</p>
+          <div class="actions">
+            <a class="button button-inverse" href="https://www.linkedin.com/in/luudanny/">Connect on LinkedIn</a>
           </div>
-          <div class="case-grid">
-            <article class="case-study" data-reveal>
-              <p class="case-metric">20 min <span>→ milliseconds</span></p>
-              <h4>From minutes to milliseconds</h4>
-              <p>A page was taking roughly 20 minutes to load. I traced the delay to oversized data transfer objects and reworked them to bring the load time down to milliseconds.</p>
-            </article>
-            <article class="case-study" data-reveal>
-              <p class="case-metric">30% <span>→ 80%+</span></p>
-              <h4>Better test coverage, together</h4>
-              <p>My team raised JUnit coverage from around 30% to more than 80%. That’s a result I’m proud to have been part of.</p>
-            </article>
-            <article class="case-study" data-reveal>
-              <p class="case-metric">500+ <span>stores</span></p>
-              <h4>Automating flyer data</h4>
-              <p>I helped automate digital flyer data for a retail platform serving more than 500 stores, making a repetitive integration easier to manage.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section personal-section" id="personal" aria-labelledby="personal-title">
-      <div class="shell">
-        <div class="section-head" data-reveal><p class="kicker">Away from work</p><h2 id="personal-title">A few other things I’m into.</h2></div>
-        <div class="personal-grid">
-          <article class="personal-story" data-reveal><h3>Fitness &amp; movement</h3><p>Gymnastics and tricking used to be a big part of my life. I even kept practising in my living room during the pandemic. These days, I’m more focused on staying strong, being active and looking after my health.</p><a class="link-inline" href="https://www.youtube.com/shorts/0AFKd_9AN0o" target="_blank" rel="noopener noreferrer">A double aerial twist from my tricking days <span aria-hidden="true">↗</span></a><!-- media:gymnastics --></article>
-          <article class="personal-story" data-reveal><h3>Competitive foosball</h3><p>I play foosball with Ottawa Foos. I like the competition, but I also enjoy the people and the community around it. It’s even inspired a few of my 3D printing projects.</p><figure class="project-media"><img src="assets/images/projects/foosball-keychains.webp" width="677" height="900" alt="Multicoloured miniature foosball player keychains" loading="lazy" decoding="async"><figcaption>Small foosball-themed prints.</figcaption></figure></article>
-          <article class="personal-story" data-reveal><h3>Other interests</h3><p>I’ve also gotten into ISSF Standard Pistol competition, which inspired me to start ISSF Trainer. On a different note, I’m interested in personal finance and investing. I’ve made videos about what I’ve learned in the past, and I’d like to get back into video editing someday.</p><!-- media:reading --></article>
-        </div>
-      </div>
-    </section>
-
-    
-
-    <section class="section toolkit" aria-labelledby="toolkit-title">
-      <div class="shell">
-        <div class="section-head" data-reveal>
-          <p class="kicker">Technical background</p>
-          <h2 id="toolkit-title">Tools I work with.</h2>
-        </div>
-        <div class="expertise-grid" data-reveal>
-          <div><h3>Enterprise architecture</h3><p>SAP Commerce Cloud, Java, REST APIs, system integration, SQL</p></div>
-          <div><h3>Delivery &amp; operations</h3><p>Linux, application servers, load balancers, Docker, CI/CD</p></div>
-          <div><h3>Engineering quality</h3><p>JUnit, code reviews, developer mentorship</p></div>
-          <div><h3>Personal projects</h3><p>Python, Flutter, Raspberry Pi, CAD and 3D printing</p></div>
-        </div>
-        <div class="credentials">
-          <div class="credential" data-reveal><strong>Bachelor of Computer Science</strong><span>Carleton University</span></div>
-          <div class="credential" data-reveal><strong>SAP Commerce Cloud Developer</strong><span>Professional certification</span></div>
-          <div class="credential" data-reveal><strong>SAP Commerce Business Analyst</strong><span>Associate certification</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
-      <div class="shell">
-        <div class="section-head" data-reveal><p class="kicker">Elsewhere</p><h2 id="contact-title">A few places you can find me.</h2></div>
-        <div class="channel-grid">
-          <article class="channel-card" data-reveal><h3>LinkedIn</h3><p>A little more about my career and the work I do in software.</p><a class="link-inline" href="https://www.linkedin.com/in/luudanny/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></article>
-          <article class="channel-card" data-reveal><h3>GitHub</h3><p>Some of the code and side projects I’ve shared publicly.</p><a class="link-inline" href="https://github.com/DannyLuu" target="_blank" rel="noopener noreferrer">Explore public work ↗</a></article>
-          <article class="channel-card" data-reveal><h3>YouTube</h3><p>Videos I’ve made over the years about tricking, travel and personal finance. I haven’t posted regularly in a while, but it’s something I’d like to return to.</p><a class="link-inline" href="https://www.youtube.com/@DannyLuu" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></article>
+          <ul class="contact-links" aria-label="Elsewhere online">
+            <li><a href="https://github.com/DannyLuu">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@DannyLuu">YouTube</a></li>
+          </ul>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer dark">
     <div class="shell footer-inner">
-      <p>© <span data-current-year>2026</span> Danny Luu.</p>
-      <a href="#home">Back to top ↑</a>
+      <p>© <span data-current-year>2026</span> Danny Luu</p>
+      <a href="#home">Back to top</a>
     </div>
   </footer>
-
-  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

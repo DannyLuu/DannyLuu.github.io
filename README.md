@@ -1,76 +1,30 @@
 # dannyluu.com
 
-Source for [Danny Luu's personal website](https://www.dannyluu.com/), hosted on GitHub Pages.
-
-A lightweight, accessible personal portfolio and product hub built with static HTML, shared CSS, and a small progressive JavaScript file. No build pipeline, runtime dependencies, analytics, trackers, or remote fonts.
+Danny Luu’s personal portfolio, served by GitHub Pages at [dannyluu.com](https://www.dannyluu.com/). The site uses static HTML, shared CSS, and a small script. It has no application build step, runtime packages, analytics, or third-party font requests.
 
 ## Pages
 
-- `index.html` — personal narrative, engineering leadership, selected engineering outcomes, maker projects, optional side-project services, personal interests, credentials and external channels
-- `issf-trainer/index.html` — independent product landing page. **ISSF Trainer's repository is private and must not be linked or exposed.**
-- `assets/css/site.css` — shared design system and all page styles
-- `assets/js/site.js` — accessible mobile navigation, scroll highlights, and reduced-motion-aware reveals
-- `assets/images/headshot.png` — portrait, displayed without distortion
+- `index.html` introduces Danny’s architecture expertise, documents selected engineering outcomes, features ISSF Trainer, and covers his career story, maker projects, approach, and contact information.
+- `issf-trainer/index.html` is the public-facing software design case study for an independent Flutter project in development. The application repository and builds are private.
+- `assets/css/site.css` provides the shared type, layout, colour, and responsive rules.
+- `assets/js/site.js` enhances the navigation and updates the copyright year. Both routes and navigation remain usable with JavaScript disabled.
 
-## Local preview
+## Preview and check
+
+From the repository root, serve the files directly.
 
 ```sh
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000/` and `http://localhost:8000/issf-trainer/`.
+Open [the homepage](http://localhost:8000/) and [the case study](http://localhost:8000/issf-trainer/). Check deep links, reduced motion, keyboard use and layout on narrow screens before publishing. JavaScript syntax can be checked with `node --check assets/js/site.js`.
 
-## Adding a project or page
+## Content and assets
 
-1. Create a new directory, such as `my-project/index.html`, following the semantic structure of `issf-trainer/index.html`.
-2. Load `../assets/css/site.css` and `../assets/js/site.js` from the new page. Reuse existing page, feature, card, and typography classes.
-3. Add a featured or selected-work card in `index.html`, linking to the new page.
-4. Add factual product copy, confirmed screenshots and links only. Add canonical URL, description, and Open Graph metadata.
-5. Update `sitemap.xml` to include the public page and check desktop/mobile navigation.
+Keep professional examples anonymized and retain team attribution for shared outcomes. Use approved, public material only. The current employer, client names, unpublished projects, private source links, and unreleased builds stay out of page copy, metadata, and assets.
 
-No new framework or build tooling is required. If the number of projects becomes large, consider a small static site generator only after the maintenance cost of manual pages becomes significant.
+Use factual status language and approved, non-operational interface imagery when covering ISSF Trainer. The current cover is an illustration of the project’s information areas. Genuine maker photographs are under `assets/images/projects/`. Obtain permission and review visible personal details before adding new photos. Include alt text and true dimensions, and lazy-load below-the-fold photographs.
 
-## Updating visual style
+The portrait WebP variants reuse the original portrait at two sizes. The original PNG also serves as the homepage sharing image. Instrument Serif and Inter are hosted locally, with their licenses in `assets/fonts/`.
 
-Change the CSS custom properties in `:root` and the monochrome/deep-red design rules in `assets/css/site.css`. Keep the palette primarily black and white, with limited oxblood-red accents. Avoid introducing multiple competing accent colours. Use naturally sized, undistorted images, subtle animations, and meaningful visual hierarchy.
-
-## YouTube content
-
-The homepage links to the verified channel at `https://www.youtube.com/@DannyLuu`. It accurately describes past gymnastics/tricking, personal-finance and travel content, as well as the user's current hiatus and interest in future maker and financial-literacy videos. Add selected videos with lightweight preview thumbnails once approved; do not auto-play external embeds.
-
-## Content and privacy principles
-
-- Position ISSF Trainer as an athlete-facing sporting product, not as an open-source repository or code demo.
-- Do not publish private source links, unpublished screenshots, product release dates, or false download buttons.
-- Keep current employer and clients anonymous, while showcasing job title, verified professional achievements, and engineering interests. Avoid internal systems, home address, and private family information.
-- Respect accessibility, keyboard navigation, contrast, responsive layout, reduced motion, and image aspect ratios.
-- Avoid presenting placeholder content as finished work.
-
-## Project photography
-
-Five optimized WebP photographs are committed under `assets/images/projects/`: Ottawa Foos anniversary badges, the privacy-cropped smart-mirror display, Prusa and Bambu Lab H2C fabrication setups, and foosball keychains. The homepage uses the shared `project-media` and `media-pair` classes with intrinsic dimensions, descriptive alt text and lazy loading. The existing hero portrait is unchanged. Additional supplied photographs remain optional; unfilled media markers are comments only and do not create broken image requests. Do not publish unreviewed home/family images, original EXIF, or unapproved shared photo links.
-
-## Editorial organization
-
-The homepage follows a project-first story: About covers career origins, Projects shows independent and community work, Services invites appropriately scoped side projects, and Engineering explains decision-making, mentoring and three anonymized measurable outcomes (including team attribution). Beyond Work describes selected personal interests. Professional outcomes no longer get a separate top-level section. Keep them in Engineering, preserve the `#experience` deep-link anchor, and do not duplicate those stories in the toolkit or external-channel sections. Keep the product landing page independent and accurate about development status. Do not showcase Maple Exchange until the owner explicitly approves its public positioning.
-
-## Hero and interface direction
-
-The homepage introduces Danny as **Architect. Maker. Explorer.** Keep these three words consistent in the visible heading, document title, and social sharing metadata. Preserve the approved first-person introduction. Lead with the headline and actions on mobile before the headshot; the portrait's intrinsic dimensions must remain intact. Use the deep oxblood accent selectively for the third word and a little contrast in the engineering bento cards rather than adding decorative clutter.
-
-Navigation should fit smaller laptop widths, remain keyboard-accessible (including Escape), and keep the same section order across the homepage and ISSF Trainer page. Avoid hover effects that shift non-clickable content. Keep key actions large enough to tap and respect reduced-motion settings.
-
-## Editorial voice
-
-Write in Danny's voice: conversational, curious, grounded and professional without sounding corporate. Prefer first-person accounts of specific things he has done or enjoyed over broad claims about personality. Use familiar wording (“tinkering with electronics,” “playing foosball,” “3D modelling and printing”) instead of inflated descriptions or keyword-heavy lists. Each homepage section should add information rather than reintroduce the same themes.
-
-Keep the distinction between current activities and past interests: fitness and staying healthy are current priorities; gymnastics/tricking are part of the past; video production is something he may return to, not an active publishing schedule. His engineering role and mentoring belong in Engineering, not repeated throughout the hero. Avoid inferred achievements or product promises. The public hero location is Canada only; do not add a more specific home location.
-
-## Services and availability
-
-The homepage includes **Ways I can help** as an invitation to discuss small side projects, not as a full-time consulting agency or a guarantee of availability. Services include custom 3D modelling, 3D printing, appropriately scoped software work, basic home/electronics troubleshooting when feasible, and general personal-finance learning conversations. Keep the language conditional on project suitability, schedule, and skill.
-
-- Do not claim licensed trade, electrical, structural, or safety-critical repair qualifications. Refer such tasks to qualified professionals.
-- Personal finance content is educational only. Danny is **not a financial advisor**; do not offer individualized investment recommendations, portfolio management, or imply professional accreditation.
-- Do not invent prices, lead times, client testimonials, a booking system, or a home location. The call to action links to his existing public LinkedIn profile.
-- Keep the services section after tangible projects, so examples of existing work precede offers to collaborate.
+When adding a public page, update the sitemap and use matching canonical and Open Graph URLs on `www.dannyluu.com`. Maintain existing paths and fragment IDs when reorganizing a page.

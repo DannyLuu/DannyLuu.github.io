@@ -1,69 +1,41 @@
-    (() => {
-      document.querySelectorAll('[data-current-year]').forEach(node => {
-        node.textContent = String(new Date().getFullYear());
-      });
-      const header = document.querySelector('.site-header');
-      const toggle = document.querySelector('.nav-toggle');
-      const nav = document.querySelector('.site-nav');
-      const links = [...nav.querySelectorAll('a')];
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+(() => {
+  for (const year of document.querySelectorAll('[data-current-year]')) {
+    year.textContent = String(new Date().getFullYear());
+  }
 
-      const closeNav = () => {
-        nav.dataset.open = 'false';
-        toggle.setAttribute('aria-expanded', 'false');
-      };
+  const header = document.querySelector('.site-header');
+  const toggle = header?.querySelector('.nav-toggle');
+  const nav = header?.querySelector('.site-nav');
+  if (!toggle || !nav) return;
 
-      toggle.addEventListener('click', () => {
-        const open = nav.dataset.open !== 'true';
-        nav.dataset.open = String(open);
-        toggle.setAttribute('aria-expanded', String(open));
-      });
-      links.forEach(link => link.addEventListener('click', closeNav));
+  const setOpen = open => {
+    nav.toggleAttribute('data-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  };
 
-      // Keep the mobile menu easy to dismiss without reaching for the toggle.
-      document.addEventListener('keydown', event => {
-        if (event.key === 'Escape' && nav.dataset.open === 'true') {
-          closeNav();
-          toggle.focus();
-        }
-      });
-      document.addEventListener('pointerdown', event => {
-        if (nav.dataset.open === 'true' && !header.contains(event.target)) closeNav();
-      });
-      const desktopNav = window.matchMedia('(min-width: 66.01rem)');
-      desktopNav.addEventListener('change', event => {
-        if (event.matches) closeNav();
-      });
+  toggle.addEventListener('click', () => setOpen(!nav.hasAttribute('data-open')));
 
-      const syncHeader = () => { header.dataset.scrolled = String(window.scrollY > 24); };
-      syncHeader();
-      window.addEventListener('scroll', syncHeader, { passive: true });
+  nav.addEventListener('click', event => {
+    if (event.target.closest('a')) setOpen(false);
+  });
 
-      const sections = [...document.querySelectorAll('main section[id]')];
-      const localLinks = links.filter(link => link.getAttribute('href').startsWith('#'));
-      if ('IntersectionObserver' in window && localLinks.length) {
-        const sectionObserver = new IntersectionObserver(entries => {
-          entries.filter(entry => entry.isIntersecting).forEach(entry => {
-            localLinks.forEach(link => link.removeAttribute('aria-current'));
-            const active = nav.querySelector(`a[href="#${entry.target.id}"]`);
-            if (active) active.setAttribute('aria-current', 'true');
-          });
-        }, { rootMargin: '-25% 0px -65% 0px' });
-        sections.forEach(section => sectionObserver.observe(section));
-      }
+  header.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && nav.hasAttribute('data-open')) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
 
-      const revealItems = [...document.querySelectorAll('[data-reveal]')];
-      if (reduceMotion || !('IntersectionObserver' in window)) {
-        revealItems.forEach(item => item.classList.add('revealed'));
-      } else {
-        const revealObserver = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('revealed');
-              revealObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: .12 });
-        revealItems.forEach(item => revealObserver.observe(item));
-      }
-    })();
+  header.addEventListener('focusout', event => {
+    if (!header.contains(event.relatedTarget)) setOpen(false);
+  });
+
+  document.addEventListener('pointerdown', event => {
+    if (!header.contains(event.target)) setOpen(false);
+  });
+
+  window.matchMedia('(max-width: 52rem)').addEventListener('change', () => setOpen(false));
+
+  toggle.hidden = false;
+  header.setAttribute('data-enhanced', '');
+})();
