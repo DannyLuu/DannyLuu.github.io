@@ -339,17 +339,6 @@ button { font: inherit; }
 
 .result-grid article > p:last-child { margin-top: .6rem; }
 
-.result-metric {
-  margin-bottom: .8rem;
-  color: var(--red);
-  font-family: var(--serif);
-  font-size: clamp(2.35rem, 4.1vw, 4.4rem);
-  line-height: .96;
-  letter-spacing: -.025em;
-}
-
-.result-metric small { display: block; font-size: .57em; }
-
 .credentials {
   margin-top: 1.25rem;
   color: var(--muted);
