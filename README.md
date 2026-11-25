@@ -1,20 +1,30 @@
 # dannyluu.com
 
-Source for Danny Luu's personal website, hosted with GitHub Pages at [www.dannyluu.com](https://www.dannyluu.com/).
+Danny Luu’s personal portfolio, served by GitHub Pages at [dannyluu.com](https://www.dannyluu.com/). The site uses static HTML, shared CSS, and a small script. It has no application build step, runtime packages, analytics, or third-party font requests.
 
-The site is an expressive, responsive portfolio built as one dependency-free HTML document. It uses local images, lightweight CSS motion, and a small amount of progressive JavaScript—without analytics, trackers, external fonts, frameworks, or a build step.
+## Pages
 
-## Local preview
+- `index.html` introduces Danny’s architecture expertise, documents selected engineering outcomes, features ISSF Trainer, and covers his career story, maker projects, approach, and contact information.
+- `issf-trainer/index.html` is the public-facing software design case study for an independent Flutter project in development. The application repository and builds are private.
+- `assets/css/site.css` provides the shared type, layout, colour, and responsive rules.
+- `assets/js/site.js` enhances the navigation and updates the copyright year. Both routes and navigation remain usable with JavaScript disabled.
 
-```bash
+## Preview and check
+
+From the repository root, serve the files directly.
+
+```sh
 python -m http.server 8000
 ```
 
-Open `http://localhost:8000`.
+Open [the homepage](http://localhost:8000/) and [the case study](http://localhost:8000/issf-trainer/). Check deep links, reduced motion, keyboard use and layout on narrow screens before publishing. JavaScript syntax can be checked with `node --check assets/js/site.js`.
 
-## Content principles
+## Content and assets
 
-- Share professional scope without publishing client, timeline, or precise-location details.
-- Use real project summaries; keep unreleased work clearly labelled.
-- Keep the portrait at its natural aspect ratio.
-- Respect reduced-motion preferences and maintain keyboard-accessible navigation.
+Keep professional examples anonymized and retain team attribution for shared outcomes. Use approved, public material only. The current employer, client names, unpublished projects, private source links, and unreleased builds stay out of page copy, metadata, and assets.
+
+Use factual status language and approved, non-operational interface imagery when covering ISSF Trainer. The current cover is an illustration of the project’s information areas. Genuine maker photographs are under `assets/images/projects/`. Obtain permission and review visible personal details before adding new photos. Include alt text and true dimensions, and lazy-load below-the-fold photographs.
+
+The portrait WebP variants reuse the original portrait at two sizes. The original PNG also serves as the homepage sharing image. Instrument Serif and Inter are hosted locally, with their licenses in `assets/fonts/`.
+
+When adding a public page, update the sitemap and use matching canonical and Open Graph URLs on `www.dannyluu.com`. Maintain existing paths and fragment IDs when reorganizing a page.

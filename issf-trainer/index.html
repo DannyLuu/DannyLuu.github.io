@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Danny Luu’s software design case study for ISSF Trainer, an independent Flutter project for Olympic-style precision pistol sport.">
+  <meta name="author" content="Danny Luu">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="ISSF Trainer | Danny Luu">
+  <meta property="og:description" content="Designing a mobile experience for competition references, score records, and session history.">
+  <meta property="og:url" content="https://www.dannyluu.com/issf-trainer/">
+  <meta property="og:image" content="https://www.dannyluu.com/assets/images/issf-trainer-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ISSF Trainer software case study by Danny Luu">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>ISSF Trainer | Danny Luu</title>
+  <link rel="canonical" href="https://www.dannyluu.com/issf-trainer/">
+  <link rel="icon" href="../assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="../">Danny Luu<span aria-hidden="true">.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="../#capabilities">Expertise</a></li>
+          <li><a href="../#work">Work</a></li>
+          <li><a href="../#about">Story</a></li>
+          <li><a href="../#personal">Beyond Software</a></li>
+          <li><a href="../#approach">Approach</a></li>
+          <li><a class="nav-contact" href="../#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="section dark case-hero" aria-labelledby="product-title">
+      <div class="shell feature-grid">
+        <div>
+          <p class="breadcrumb"><a href="../#work">Featured work</a> <span aria-hidden="true">/</span> ISSF Trainer</p>
+          <h1 id="product-title">ISSF Trainer</h1>
+          <p class="feature-lede">Designing a mobile app for a specialist sport.</p>
+          <p class="hero-lede">An independent Flutter project for athletes in Olympic-style precision pistol sport, shaped by the references and records I wanted in one place when I took up competition.</p>
+          <p class="status"><span aria-hidden="true"></span> In development</p>
+        </div>
+        <div class="project-cover" aria-hidden="true">
+          <div class="cover-orbits"></div>
+          <div class="cover-card">
+            <span class="cover-app">ISSF Trainer</span>
+            <span class="cover-rule"></span>
+            <span class="cover-row">Reference</span>
+            <span class="cover-row">Scoring</span>
+            <span class="cover-row">Session history</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story" id="story" aria-labelledby="story-title" tabindex="-1">
+      <div class="shell split">
+        <div>
+          <p class="kicker">The starting point</p>
+          <h2 id="story-title">Too much to piece together.</h2>
+        </div>
+        <div class="story-copy">
+          <p class="section-lede">When I got into ISSF Standard Pistol competition, I found myself keeping track of the sport’s formats, scores, and notes in different places.</p>
+          <p>I wanted a single mobile app where an athlete could look up a competition format, record a score, and revisit a past session. Each task is small. The product work is figuring out how they fit together without making people learn a whole new vocabulary.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise" id="features" aria-labelledby="features-title" tabindex="-1">
+      <div class="shell">
+        <div class="split section-intro">
+          <div>
+            <p class="kicker">Product design</p>
+            <h2 id="features-title">Three jobs for one app.</h2>
+          </div>
+          <p class="section-lede">Reference material, recording a result, and reviewing a session each call for a different kind of screen. The app’s scope is organized around those tasks.</p>
+        </div>
+        <div class="capability-list">
+          <article>
+            <h3>Find a reference</h3>
+            <p>Use recognizable discipline names and short explanations so an athlete can find the relevant competition information without starting from a long manual.</p>
+          </article>
+          <article>
+            <h3>Record a score</h3>
+            <p>Keep score entry focused on the result being recorded. The interface needs to make it easy to notice when an entry is missing or in the wrong place.</p>
+          </article>
+          <article>
+            <h3>Revisit a session</h3>
+            <p>Keep past entries available with enough context that a result still makes sense when an athlete comes back to it later.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="decisions-title">
+      <div class="shell split">
+        <div>
+          <p class="kicker">Engineering considerations</p>
+          <h2 id="decisions-title">What shaped the design.</h2>
+        </div>
+        <div class="approach-list">
+          <article>
+            <h3>A shared mobile interface</h3>
+            <p>I chose Flutter for the app. It lets me work on a shared mobile interface while I refine the screens, navigation, and interactions around each task.</p>
+          </article>
+          <article>
+            <h3>Domain rules and screen design</h3>
+            <p>Competition terminology belongs in the product because athletes recognize it. The design challenge is deciding which distinctions a screen needs to show, and which can sit in the reference material until someone needs them.</p>
+          </article>
+          <article>
+            <h3>What I’m learning</h3>
+            <p>Knowing the sport helps me spot requirements. Designing the app forces me to explain them to someone who may only be looking for one answer or trying to record one result.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark contact" id="status" aria-labelledby="status-title" tabindex="-1">
+      <div class="shell split contact-grid">
+        <div>
+          <p class="kicker">Project status</p>
+          <h2 id="status-title">Still in development.</h2>
+        </div>
+        <div>
+          <p class="section-lede">I’m continuing to refine the mobile experience as an independent project. The design areas above describe the scope I’m working toward.</p>
+          <div class="actions">
+            <a class="button button-inverse" href="../#work">Back to the portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer dark">
+    <div class="shell footer-inner">
+      <p>© <span data-current-year>2026</span> Danny Luu</p>
+      <a href="../">Danny Luu homepage</a>
+    </div>
+  </footer>
+</body>
+</html>
